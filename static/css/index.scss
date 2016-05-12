@@ -1,0 +1,49 @@
+@import "bourbon";
+@import "normalize";
+
+$Cwidth:1240px;
+* {
+    font-family:  "Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif;
+}
+
+ul,li{
+        list-style: none; margin: 0; padding: 0;
+    }
+a{ text-decoration: none;}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder {  
+  color: #fff;
+}
+@mixin anInit($anname,$andu:1s,$delay:0s,$timefn:ease,$anfill:both){
+    @include animation-name($anname);
+    @include animation-duration($andu);
+    @include animation-fill-mode($anfill);
+    @include animation-delay($delay);
+    @include animation-timing-function($timefn);
+    
+}
+
+.cbox{
+	width: $Cwidth;
+	margin: 0 auto;
+}
+
+.stab{
+
+	.imgbox{
+		width: 614px;
+		height: 352px;
+	}
+}
