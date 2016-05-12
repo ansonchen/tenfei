@@ -1,7 +1,8 @@
-@import "bourbon";
+/*@import "bourbon";*/
 @import "normalize";
 
 $Cwidth:1240px;
+
 * {
     font-family:  "Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif;
 }
@@ -42,8 +43,57 @@ a{ text-decoration: none;}
 
 .stab{
 
-	.imgbox{
+	height: 352px;
+	
+	.img{
 		width: 614px;
 		height: 352px;
+		float: right;
 	}
+	.text{
+	 	width: 572px;
+		height: 352px;
+		flex: left;
+		h3{
+			height: 50px;
+			position: relative;
+			top:-8px;
+			margin: 0;
+			font-size: 30px;
+			color: #196dae;
+			
+		}
+		.lab{
+			height: 40px;
+			line-height: 40px;
+			width:inherit;
+			font-size: 24px;
+			border-bottom: 1px solid #dadada;
+				a{
+					width: 30%;
+					text-align: center;
+					display: inline-block;
+					color: #787878;
+					&:hover{
+						color: #333;
+					}
+				}	
+		}
+		.con{
+			height: 262px;
+			overflow: hidden;
+			width:inherit;
+			color: #565656;
+			font-size: 20px;
+			line-height: 1.7;
+			.scroll{
+				
+			margin-top:7px;			
+			
+			
+				}
+			
+		}
+	}
+		
 }
