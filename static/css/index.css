@@ -606,4 +606,160 @@ a {
     -o-transform: scale3d(1, 0, 1);
     transform: scale3d(1, 0, 1); } }
 
+/* line 185, F:/Git/tenfei/tenfei/static/css/index.scss */
+.btn-consult {
+  background: url("img/online3.png") no-repeat center top;
+  width: 70px;
+  height: 258px;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  z-index: 1000;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-animation-name: fadeIns;
+  -moz-animation-name: fadeIns;
+  animation-name: fadeIns;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
+  /* line 195, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .btn-consult a {
+    width: 70px;
+    height: 71px;
+    display: block;
+    position: relative; }
+    /* line 197, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .btn-consult a .telbox {
+      position: absolute;
+      display: none;
+      right: 72px;
+      top: 0px;
+      width: 194px;
+      height: 70px;
+      background: #fff url("img/tel.png") no-repeat center center;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
+    /* line 201, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .btn-consult a .wxbox {
+      position: absolute;
+      display: none;
+      width: 144px;
+      height: 144px;
+      right: 72px;
+      top: -100px;
+      background: #fff url("img/wx2.png") no-repeat center center;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
+    /* line 205, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .btn-consult a:hover .telbox, .btn-consult a:hover .wxbox {
+      display: block; }
+    /* line 206, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .btn-consult a.totop {
+      height: 45px; }
+
+@-webkit-keyframes fadeIns {
+  0%, 90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIns {
+  0%, 90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIns {
+  0%, 90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* line 237, F:/Git/tenfei/tenfei/static/css/index.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
+
+/* line 242, F:/Git/tenfei/tenfei/static/css/index.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
+
 /*# sourceMappingURL=index.css.map */

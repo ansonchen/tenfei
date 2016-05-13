@@ -179,3 +179,66 @@ a{ text-decoration: none;}
    @include transform(scale3d(1, 0, 1));
   }
 }
+
+
+
+.btn-consult {
+  background: url("img/online3.png") no-repeat center top;
+  width: 70px;
+  height: 258px;
+  position: fixed;
+  top:50%;	
+  right: 10px;
+  z-index: 1000;
+  @include transform(translateY(-50%));
+  @include anInit(fadeIns,1s);
+	a{width:70px;height: 71px;display: block;
+		position: relative;
+		.telbox{position: absolute;display: none;right:72px; top:0px;width: 194px; height: 70px; background: #fff url('img/tel.png') no-repeat center center;
+			-webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+			-moz-box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+			box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
+		.wxbox{position: absolute;display: none;width: 144px; height: 144px; right:72px; top:-100px;  background: #fff url('img/wx2.png') no-repeat center center;
+					-webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+			-moz-box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+			box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
+		&:hover .telbox,&:hover .wxbox{ display: block}
+		&.totop{height: 45px;}
+	}
+	
+}
+@include keyframes(fadeIns){
+  0%,90%{
+	opacity: 0;
+	}
+100% {
+    opacity: 1;
+}
+}
+
+@include keyframes(fadeIn){
+  0% {
+    opacity: 0;
+  }
+100% {
+    opacity: 1;
+}
+}
+@include keyframes(fadeOut){
+  0% {
+    opacity: 1;
+  }
+100% {
+    opacity: 0;
+}
+}
+
+
+.fadeOut{
+@include anInit(fadeOut,0.5s);
+}
+
+
+.fadeIn{
+@include anInit(fadeIn,0.5s);
+}
