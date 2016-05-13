@@ -1,4 +1,4 @@
-/*@import "bourbon";*/
+@import "../bourbon/_bourbon.scss";
 @import "normalize";
 
 $Cwidth:1240px;
@@ -35,6 +35,12 @@ a{ text-decoration: none;}
     @include animation-timing-function($timefn);
     
 }
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 
 .cbox{
 	width: $Cwidth;
@@ -53,7 +59,7 @@ a{ text-decoration: none;}
 	.text{
 	 	width: 572px;
 		height: 352px;
-		flex: left;
+		float :left;
 		h3{
 			height: 50px;
 			position: relative;
@@ -96,4 +102,80 @@ a{ text-decoration: none;}
 		}
 	}
 		
+}
+
+.iconlist{ 
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	padding: 40px 0;
+	overflow: hidden;
+	.detail{
+		height: 200px;
+		padding: 0 10px;
+		border-top: 1px solid #dadada;
+		clear: both;
+		color: #565656;
+		p{
+			font-size: 14px;	
+			line-height: 24px;
+			margin: 0;
+		}
+		h3{
+			font-size: 24px;
+			line-height: 50px;
+			
+			margin: 0;
+		}
+		
+	}
+	a{
+		color: #565656;
+		font-size: 20px;
+		width: 218px;
+		height: 278px;
+		float: left;
+		display: block;
+		margin-right: 122px;
+		text-align: center;
+		i{
+		background: #dadada url(img/index/icons.png) no-repeat center top;
+			width: 218px;
+			height: 218px;
+			display: block;
+			overflow: hidden;
+			border-radius: 100%;
+			margin: 0 auto 10px;
+		}
+		&.nm{
+			margin-right: 0px;
+		}
+		&:nth-child(2) i{background-position: center -218px}
+		&:nth-child(3) i{background-position: center -218px * 2}
+		&:nth-child(4) i{background-position: center -218px * 4}
+		
+		&:nth-child(6) i{background-position: center -218px * 3}
+		&:nth-child(7) i{background-position: center -218px * 5}
+		&:nth-child(8) i{background-position: center -218px * 6}
+		&:nth-child(9) i{background-position: center -218px * 7}
+		&:hover{
+			i{background-color: #f19826}
+		}
+	}
+}
+.hide{ display: none}
+
+
+.zoomIn{
+     @include anInit(zoomIn);
+}
+
+@include keyframes(zoomIn){
+  50% {
+	   opacity: 1;
+  }
+
+  0% {
+	   opacity: 0;
+   @include transform(scale3d(1, 0, 1));
+  }
 }
