@@ -467,17 +467,21 @@ a {
       line-height: 40px;
       width: inherit;
       font-size: 24px;
+      text-align: center;
       border-bottom: 1px solid #dadada; }
-      /* line 78, F:/Git/tenfei/tenfei/static/css/index.scss */
+      /* line 79, F:/Git/tenfei/tenfei/static/css/index.scss */
       .stab .text .lab a {
         width: 30%;
         text-align: center;
         display: inline-block;
-        color: #787878; }
-        /* line 83, F:/Git/tenfei/tenfei/static/css/index.scss */
+        color: #a1a1a1; }
+        /* line 84, F:/Git/tenfei/tenfei/static/css/index.scss */
         .stab .text .lab a:hover {
-          color: #333; }
-    /* line 88, F:/Git/tenfei/tenfei/static/css/index.scss */
+          color: #565656; }
+        /* line 87, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .stab .text .lab a.cur {
+          color: #565656; }
+    /* line 92, F:/Git/tenfei/tenfei/static/css/index.scss */
     .stab .text .con {
       height: 262px;
       overflow: hidden;
@@ -485,34 +489,86 @@ a {
       color: #565656;
       font-size: 20px;
       line-height: 1.7; }
-      /* line 95, F:/Git/tenfei/tenfei/static/css/index.scss */
+      /* line 99, F:/Git/tenfei/tenfei/static/css/index.scss */
       .stab .text .con .scroll {
         margin-top: 7px; }
 
-/* line 107, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 114, F:/Git/tenfei/tenfei/static/css/index.scss */
+.ltab .text {
+  overflow: hidden; }
+  /* line 117, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .ltab .text h3 {
+    height: 50px;
+    position: relative;
+    top: -8px;
+    margin: 90px 0 10px 0;
+    font-size: 30px;
+    color: #196dae; }
+  /* line 126, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .ltab .text .lab {
+    height: 40px;
+    line-height: 40px;
+    width: inherit;
+    font-size: 24px;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    padding-bottom: 14px; }
+    /* line 134, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text .lab a {
+      width: 30%;
+      text-align: center;
+      display: inline-block;
+      color: #a1a1a1; }
+      /* line 139, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .lab a.cur {
+        color: #565656; }
+      /* line 142, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .lab a:hover {
+        color: #565656; }
+      /* line 145, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .lab a:first-child {
+        text-align: right; }
+      /* line 148, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .lab a:last-child {
+        text-align: left; }
+  /* line 153, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .ltab .text .con {
+    overflow: hidden;
+    color: #565656;
+    font-size: 20px;
+    line-height: 1.7; }
+    /* line 154, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text .con img {
+      max-width: 1240px;
+      margin: 30px auto; }
+    /* line 159, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text .con p {
+      margin: 1em 0; }
+
+/* line 166, F:/Git/tenfei/tenfei/static/css/index.scss */
 .iconlist {
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
   padding: 40px 0;
   overflow: hidden; }
-  /* line 112, F:/Git/tenfei/tenfei/static/css/index.scss */
+  /* line 171, F:/Git/tenfei/tenfei/static/css/index.scss */
   .iconlist .detail {
     height: 200px;
     padding: 0 10px;
     border-top: 1px solid #dadada;
     clear: both;
     color: #565656; }
-    /* line 118, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 177, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist .detail p {
       font-size: 14px;
       line-height: 24px;
       margin: 0; }
-    /* line 123, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 182, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist .detail h3 {
       font-size: 24px;
       line-height: 50px;
       margin: 0; }
-  /* line 131, F:/Git/tenfei/tenfei/static/css/index.scss */
+  /* line 190, F:/Git/tenfei/tenfei/static/css/index.scss */
   .iconlist a {
     color: #565656;
     font-size: 20px;
@@ -522,7 +578,7 @@ a {
     display: block;
     margin-right: 122px;
     text-align: center; }
-    /* line 140, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 199, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a i {
       background: #dadada url(img/index/icons.png) no-repeat center top;
       width: 218px;
@@ -531,39 +587,39 @@ a {
       overflow: hidden;
       border-radius: 100%;
       margin: 0 auto 10px; }
-    /* line 149, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 208, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a.nm {
       margin-right: 0px; }
-    /* line 152, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 211, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(2) i {
       background-position: center -218px; }
-    /* line 153, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 212, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(3) i {
       background-position: center -436px; }
-    /* line 154, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 213, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(4) i {
       background-position: center -872px; }
-    /* line 156, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 215, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(6) i {
       background-position: center -654px; }
-    /* line 157, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 216, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(7) i {
       background-position: center -1090px; }
-    /* line 158, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 217, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(8) i {
       background-position: center -1308px; }
-    /* line 159, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 218, F:/Git/tenfei/tenfei/static/css/index.scss */
     .iconlist a:nth-child(9) i {
       background-position: center -1526px; }
-    /* line 161, F:/Git/tenfei/tenfei/static/css/index.scss */
-    .iconlist a:hover i {
+    /* line 220, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:hover i, .iconlist a.cur i {
       background-color: #f19826; }
 
-/* line 165, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 224, F:/Git/tenfei/tenfei/static/css/index.scss */
 .hide {
   display: none; }
 
-/* line 168, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 227, F:/Git/tenfei/tenfei/static/css/index.scss */
 .zoomIn {
   -webkit-animation-name: zoomIn;
   -moz-animation-name: zoomIn;
@@ -606,7 +662,7 @@ a {
     -o-transform: scale3d(1, 0, 1);
     transform: scale3d(1, 0, 1); } }
 
-/* line 185, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 244, F:/Git/tenfei/tenfei/static/css/index.scss */
 .btn-consult {
   background: url("img/online3.png") no-repeat center top;
   width: 70px;
@@ -635,13 +691,13 @@ a {
   -webkit-animation-timing-function: ease;
   -moz-animation-timing-function: ease;
   animation-timing-function: ease; }
-  /* line 195, F:/Git/tenfei/tenfei/static/css/index.scss */
+  /* line 254, F:/Git/tenfei/tenfei/static/css/index.scss */
   .btn-consult a {
     width: 70px;
     height: 71px;
     display: block;
     position: relative; }
-    /* line 197, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 256, F:/Git/tenfei/tenfei/static/css/index.scss */
     .btn-consult a .telbox {
       position: absolute;
       display: none;
@@ -653,7 +709,7 @@ a {
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
-    /* line 201, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 260, F:/Git/tenfei/tenfei/static/css/index.scss */
     .btn-consult a .wxbox {
       position: absolute;
       display: none;
@@ -665,10 +721,10 @@ a {
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px; }
-    /* line 205, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 264, F:/Git/tenfei/tenfei/static/css/index.scss */
     .btn-consult a:hover .telbox, .btn-consult a:hover .wxbox {
       display: block; }
-    /* line 206, F:/Git/tenfei/tenfei/static/css/index.scss */
+    /* line 265, F:/Git/tenfei/tenfei/static/css/index.scss */
     .btn-consult a.totop {
       height: 45px; }
 
@@ -726,7 +782,7 @@ a {
   100% {
     opacity: 0; } }
 
-/* line 237, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 296, F:/Git/tenfei/tenfei/static/css/index.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   -moz-animation-name: fadeOut;
@@ -744,7 +800,7 @@ a {
   -moz-animation-timing-function: ease;
   animation-timing-function: ease; }
 
-/* line 242, F:/Git/tenfei/tenfei/static/css/index.scss */
+/* line 301, F:/Git/tenfei/tenfei/static/css/index.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
