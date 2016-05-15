@@ -1,4 +1,5 @@
 function init(){
+    
     var d = document;
     //产品
     var tabs = d.getElementById('J_tabs');
