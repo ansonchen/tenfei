@@ -1,0 +1,296 @@
+@import "../bourbon/_bourbon.scss";
+@import "normalize";
+
+$Cwidth:1240px;
+
+* {
+    font-family:  "Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif;
+}
+
+ul,li{
+        list-style: none; margin: 0; padding: 0;
+    }
+a{ text-decoration: none;}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder {  
+  color: #fff;
+}
+@mixin anInit($anname,$andu:1s,$delay:0s,$timefn:ease,$anfill:both){
+    @include animation-name($anname);
+    @include animation-duration($andu);
+    @include animation-fill-mode($anfill);
+    @include animation-delay($delay);
+    @include animation-timing-function($timefn);
+    
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.cbox{
+	width: $Cwidth;
+	margin: 0 auto;
+    
+}
+body{ background: #f9f9f9}
+.head{
+    height: 502px;
+    min-width: $Cwidth;
+    background: #f9f9f9 url(img/item/itembg.jpg) no-repeat center top;
+    overflow: hidden;
+    .menu{
+        height: 90px;
+        margin-top: 25px;
+        background: url(img/Menu_bg.jpg) repeat-x center center;
+       
+        
+        a{
+            float: right;
+            line-height: 90px;
+            color: #0f6ab4;
+            font-size: 15px;
+            min-width: 66px;
+            margin-right: 60px;
+            white-space: nowrap;
+            text-align: center;
+            letter-spacing: 2px;
+            &:hover{
+                opacity: .6
+            }
+            &.cur{
+                position: relative;
+                cursor: default;
+                &:after{
+                    position: absolute;
+                    width: 100%;
+                    height: 0px;
+                    border-top:2px solid #0f6ab4;
+                    content: ' ';
+                    top:60px;
+                    left:0px;
+
+                }
+                &:hover{
+                opacity: 1
+                }
+            }
+            
+        }
+         .logo{
+            margin-left: 40px;
+            width: 180px;
+            height: 90px;
+            display: block;
+            background: url(img/logo.jpg) no-repeat center center;
+            float: left;
+             margin-right: 0px;
+             &:after{
+                 border: none;
+                 
+             }
+        }
+    
+    }
+    
+    h2{
+        clear: both;
+        color: #f9f9f9;
+        font-size: 60px;
+        line-height: 200px;
+        text-indent: 183px;
+        margin: 0;
+        font-weight: 400;
+    }
+
+
+}
+.conbox{
+
+    min-height: 600px;
+        background: #ffffff;
+        margin-top: -183px;
+        margin-bottom: 87px;
+    overflow: hidden;
+    
+    .mb{
+        height: 45px;
+        overflow: hidden;
+         padding-top: 45px;
+        text-indent: 304px;
+         color: #0e6ab4;
+            font-size: 14px;
+        a{
+           
+             color: #0e6ab4;
+       
+        }
+        
+    }
+    
+    .leftnav{
+        width:271px;
+        float: left;
+        text-align: right;
+        font-size: 14px;
+        padding-top: 10px;
+        a{
+            color: #0e6ab4;
+            border-left: 2px solid #fff;
+            padding: 0 22px; 
+            margin-bottom: 25px;
+            display: inline-block;
+            
+            &.cur{
+                border-color: #f19826;
+                cursor: default;
+            }
+            
+            
+        }
+    }
+    .conzone{
+        margin-left: 272px;
+        min-height: 600px;
+        width: 717px;
+        padding-left: 33px;
+        position: relative;
+        letter-spacing: 1px;
+        &:after{
+            position: absolute;
+            content: ' ';
+            left: 0px;
+            top:12px;
+            bottom: 30px;
+            width: 0;
+            border-left: 1px solid #bfbfbf;
+        }
+        h3{
+            color: #444;
+            font-weight: 400;
+            font-size: 24px;
+            height: 44px;
+            line-height: 44px;
+            border-bottom: 1px solid #bfbfbf;
+            margin: 0;
+        }
+        .text{
+            padding: 14px 0;
+            color: #565656;
+            line-height: 24px;
+            font-size:14px;
+            p{margin:12px 0}
+            em{ font-style: normal; color: #0e6ab4}
+            
+                
+        }
+    }
+    
+}
+
+.footer{
+    margin-top: 30px;
+    position: relative;
+    height: 418px;
+    background: #3b3b3b;
+    min-width: $Cwidth;
+    overflow: hidden;
+     font-size: 14px;
+     .cbox{position: relative;}
+    .logo{
+        position: absolute;
+        top:127px;
+        left:0;
+        display: block;
+        width: 312px;
+        height: 89px;
+        border-right:1px solid #fff;
+        background: url(img/footerlogo.png) no-repeat left center;
+        &:hover{
+            opacity: .6
+        }
+    }
+    
+    .code{ background: url(img/code.jpg) no-repeat center center;
+        width: 158px;height: 158px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top:99px;
+    }
+    .copyright{
+        position: relative;
+        top: 310px;
+        text-align: right;
+        color: #bfbfbf;
+    }
+    .text{
+        width: 280px;
+        position: absolute;
+        top:124px;
+        left: 495px;
+        color: #bfbfbf;
+         line-height: 24px;
+        a{
+            color: #bfbfbf;
+            display: block;
+            line-height: 24px;
+            &:hover{
+                color: #f19826;
+            }
+        }
+        &.links{
+             width: 100px;
+            left: 383px;
+        }
+        &.sec{
+            left: 775px;
+        }
+    }
+    
+}
+
+.hide{ display: none}
+
+
+
+@include keyframes(fadeIn){
+  0% {
+    opacity: 0;
+  }
+100% {
+    opacity: 1;
+}
+}
+@include keyframes(fadeOut){
+  0% {
+    opacity: 1;
+  }
+100% {
+    opacity: 0;
+}
+}
+
+
+.fadeOut{
+@include anInit(fadeOut,0.5s);
+}
+
+
+.fadeIn{
+@include anInit(fadeIn,0.5s);
+}
