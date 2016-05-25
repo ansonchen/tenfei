@@ -179,6 +179,13 @@ body{ background: #f9f9f9}
             width: 0;
             border-left: 1px solid #bfbfbf;
         }
+        &.list{
+            &:after{
+            bottom: 60px;
+
+            }
+            
+        }
         h3{
             color: #444;
             font-weight: 400;
@@ -198,6 +205,41 @@ body{ background: #f9f9f9}
             
                 
         }
+        
+        ul.list{
+            
+            li{ display: block;
+                height: 48px;
+                line-height: 48px;
+                border-bottom: 1px dashed #bfbfbf;
+                font-size: 14px;
+                
+                a{
+                    color: #444444;
+                    display: block;
+                    em{
+                        
+                        font-style: normal;
+                        color: #bfbfbf;
+                        float: right;
+                    }
+                    &:hover{
+                        
+                        opacity: .6
+                    }
+                
+                
+                }
+            }
+            
+        }
+        
+    .page{ clear: both; margin: 40px 0; text-align: right;color: #fff;
+            a{ border: 1px solid #c2c2c2; padding: 3px 6px; color: #ccc;
+                &.current{ cursor: default; text-decoration: underline;border-color:#666; color: #333}
+            &:hover{border-color:#666; color: #333}
+            }
+            }
     }
     
 }
