@@ -1,0 +1,196 @@
+<link rel="stylesheet" href="__ROOT__/static/css/booknow.css">
+  <!-- Start Content Box -->
+  <div class="content-box">
+  <div class="content-box-header">
+    <h3>订单号：{$vo.orderNumber}</h3>
+    <a href="#" class="back" onclick="completePrev('',1,50)"> << 返回</a>
+    <div class="clear"></div>
+  </div>
+  <!-- End .content-box-header -->
+  <div class="content-box-content">
+<div class="content">
+   <form id="addForm">
+    <div class="formBox show">
+
+        <div class="fbox">
+            <h3>基础信息</h3>
+            <label class="half">姓名<div>{$vo.name}</div></label>
+            <label class="half">淘宝网ID<div>{$vo.taobaoid}</div></label>
+            <label class="half">手机号码<div>{$vo.mobile}</div></label>
+            <label class="half">淘宝订单号<div>{$vo.taobaoorder}</div></label>
+            <label class="half">电子邮箱<div>{$vo.email}</div></label>
+            <label class="half">微信号<div>{$vo.wxnumber}</div></label>
+
+        </div>
+
+    </div>
+    <div class="formBox" id="airport">
+
+        <div class="fbox">
+           <h3>接机预订</h3>
+			<neq name="vo.airportInfo" velue=""><label>Airport Pick Up 城市+机场信息<div>{$vo.airportInfo}</div></label></neq>
+            <neq name="vo.airportArrive" velue=""><label>Arrive Date 到达日期<div>{$vo.airportArrive}</div></label></neq>
+            <neq name="vo.airportFlight" velue=""><label>Flight Number 航班号<div>{$vo.airportFlight}</div></label></neq>
+            <neq name="vo.airportTime" velue=""><label>Arrive Time 航班到达时间<div>{$vo.airportTime}</div></label></neq>
+            <neq name="vo.airportHotel" velue=""><label>Hotel Name送达酒店/地点<div>{$vo.airportHotel}</div></label></neq>
+            <neq name="vo.airportQTY" velue=""><label>QTY总人数(含儿童/婴儿)<div>{$vo.airportQTY}</div></label></neq>
+            <neq name="vo.airportBags" velue=""><label>How Many Bags 行李数量<div>{$vo.airportBags}</div></label></neq>
+            <neq name="vo.airportMobile" velue=""><label>Mobile Number 泰国可联系的电话号码<div>{$vo.airportMobile}</div></label></neq>
+        </div>
+
+    </div>
+
+    <div class="formBox" id="action">
+
+        <div class="fbox">
+         <h3>当地活动预订</h3>
+            <neq name="vo.actionCity" velue=""><label>City 出发城市<div>{$vo.actionCity}</div></label></neq>
+            <neq name="vo.actionAttraction" velue=""><label>Attraction/One Day Tour 行程名称<div>{$vo.actionAttraction}</div></label></neq>
+            <neq name="vo.actionDate" velue=""><label>Date 行程日期<div>{$vo.actionDate}</div></label></neq>
+            <neq name="vo.actionHotel" velue=""><label>Pick Up From 接送酒店英文全称<div>{$vo.actionHotel}</div></label></neq>
+            <neq name="vo.actionAddress" velue=""><label>Hotel Address 酒店地址<div>{$vo.actionAddress}</div></label></neq>
+            <neq name="vo.actionRoom" velue=""><label>Room Number 房间号<div>{$vo.actionRoom}</div></label></neq>
+            <neq name="vo.actionName" velue=""><label>Name 登记入住酒店房间的名字<div>{$vo.actionName}</div></label></neq>
+            <neq name="vo.actionAdult" velue=""><label>Adult 大人人数<div>{$vo.actionAdult}</div></label></neq>
+            <neq name="vo.actionChild" velue=""><label>Child 儿童人数&年龄 <div>{$vo.actionChild}</div></label></neq>
+            <neq name="vo.actionMobile" velue=""><label>Mobile Number  泰国可联系到的电话号码<div>{$vo.actionMobile}</div></label></neq>
+            </div>
+    </div>
+
+    <div class="formBox" id="yacht">
+
+        <div class="fbox">
+         <h3>游艇预订</h3>
+            <neq name="vo.yachtCity" velue=""><label>City 出发城市<div>{$vo.yachtCity}</div></label></neq>
+            <neq name="vo.yachtYacht" velue=""><label>Yacht 游艇名称<div>{$vo.yachtYacht}</div></label></neq>
+            <neq name="vo.yachtDate" velue=""><label>Date 出行日期<div>{$vo.yachtDate}</div></label></neq>
+            <neq name="vo.yachtTime" velue=""><label>Time 要求接送时间<div>{$vo.yachtTime}</div></label></neq>
+            <neq name="vo.yachtHours" velue=""><label>Hours 用船时长<div>{$vo.yachtHours}</div></label></neq>
+            <neq name="vo.yachtHotel" velue=""><label>Pick Up From 接送酒店英文全称<div>{$vo.yachtHotel}</div></label></neq>
+            <neq name="vo.yachtAddress" velue=""><label>Hotel Address 酒店地址<div>{$vo.yachtAddress}</div></label></neq>
+            <neq name="vo.yachtRoom" velue=""><label>Room Number 房间号<div>{$vo.yachtRoom}</div></label></neq>
+            <neq name="vo.yachtName" velue=""><label>Name 登记入住酒店房间的名字<div>{$vo.yachtName}</div></label></neq>
+            <neq name="vo.yachtAdult" velue=""><label>Adult 收费大人人数<div>{$vo.yachtAdult}</div></label></neq>
+            <neq name="vo.yachtChild" velue=""><label>Child 儿童人数&年龄 <div>{$vo.yachtChild}</div></label></neq>
+            <neq name="vo.yachtLunch" velue=""><label>Lunch 需要几份午餐<div>{$vo.yachtLunch}</div></label></neq>
+            <neq name="vo.yachtComments" velue=""><label>Comments 特殊要求<div>{$vo.yachtComments}</div></label></neq>
+            <neq name="vo.yachtMobile" velue=""><label>Mobile Number  泰国可联系到的电话号码<div>{$vo.yachtMobile}</div></label></neq>
+            </div>
+    </div>
+
+    <div class="formBox" id="flight">
+
+        <div class="fbox" >
+         <h3>送机预订</h3>
+            <neq name="vo.flightDate" velue=""><label>Date Send To Airport 送机日期<div>{$vo.flightDate}</div></label></neq>
+            <neq name="vo.flightCity" velue=""><label>City+Which Airport城市+机场名称<div>{$vo.flightCity}</div></label></neq>
+            <neq name="vo.flightNumber" velue=""><label>Flight Number 航班号<div>{$vo.flightNumber}</div></label></neq>
+
+             <neq name="vo.flightTake" velue=""><label>Take Off Time 航班起飞日期和时间<div>{$vo.flightTake}</div></label></neq>
+             <neq name="vo.flightHotel" velue=""><label>Pick Up From Hotel 出发酒店</em><div>{$vo.flightHotel}</div></label></neq>
+
+            <neq name="vo.flightTime" velue=""><label>Pick Up Time 酒店碰面时间<div>{$vo.flightTime}</div></label></neq>
+
+            <neq name="vo.flightRoom" velue=""><label>Room Number 房间号<div>{$vo.flightRoom}</div></label></neq>
+
+            <neq name="vo.flightName" velue=""><label>Name 登记入住酒店房间的名字<div>{$vo.flightName}</div></label></neq>
+            <neq name="vo.flightQTY" velue=""><label>QTY总人数(含儿童/婴儿)<div>{$vo.flightQTY}</div></label></neq>
+            <neq name="vo.flightBags" velue=""><label>How Many Bags 行李数量 <div>{$vo.flightBags}</div></label></neq>
+            <neq name="vo.flightMobile" velue=""><label>Mobile Number  泰国可联系到的电话号码<div>{$vo.flightMobile}</div></label></neq>
+
+            </div>
+
+    </div>
+
+    <div class="formBox" id="car">
+
+        <div class="fbox">
+         <h3>用车预订</h3>
+            <neq name="vo.carCity" velue=""><label>One Day Tour 城市<div>{$vo.carCity}</div></label></neq>
+            <neq name="vo.carType" velue=""><label>Car Type 用车类型<div>{$vo.carType}</div></label></neq>
+            <neq name="vo.carDate" velue=""><label>Date 行程日期<div>{$vo.carDate}</div></label></neq>
+             <neq name="vo.carHours" velue=""><label>Hours 用车时长<em>超时需要补加时费</em><div>{$vo.carHours}</div></label></neq>
+             <neq name="vo.carHotel" velue=""><label>Pick Up From 接送酒店英文</em><div>{$vo.carHotel}</div></label></neq>
+              <neq name="vo.carRoom" velue=""><label>Room Number 房间号<div>{$vo.carRoom}</div></label></neq>
+            <neq name="vo.carName" velue=""><label>Name 登记入住酒店房间的名字<div>{$vo.carName}</div></label></neq>
+             <neq name="vo.carQTY" velue=""><label>QTY总人数(含儿童)<div>{$vo.carQTY}</div></label></neq>
+            <neq name="vo.carMarket" velue=""><label>Tour 约定行程内容<div>{$vo.carMarket}</div></label></neq>
+            <neq name="vo.carMobile" velue=""><label>Mobile Number  泰国可联系到的电话号码<div>{$vo.carMobile}</div></label></neq>
+
+            </div>
+
+    </div>
+
+    <div class="formBox" id="singlecar">
+
+        <div class="fbox">
+         <h3>单程用车预订</h3>
+            <neq name="vo.scarCity" velue=""><label>City 城市<div>{$vo.scarCity}</div></label></neq>
+            <neq name="vo.scarHotel" velue=""><label>Pick up from Hotel 酒店信息<div>{$vo.scarHotel}</div></label></neq>
+            <neq name="vo.scarRoom" velue=""><label>Room number 房间号<div>{$vo.scarRoom}</div></label></neq>
+             <neq name="vo.scarDate" velue=""><label>Date 用车日期<div>{$vo.scarDate}</div></label></neq>
+             <neq name="vo.scarTime" velue=""><label>Time 用车时间<div>{$vo.scarTime}</div></label></neq>
+             <neq name="vo.scarWhere" velue=""><label>To Where送达地点<div>{$vo.scarWhere}</div></label></neq>
+            <neq name="vo.scarQTY" velue=""><label>QTY总人数(含儿童/婴儿)<div>{$vo.scarQTY}</div></label></neq>
+ 			<neq name="vo.scarBags" velue=""><label>How Many Bags 行李数量<div>{$vo.scarBags}</div></label></neq>
+
+
+            </div>
+
+    </div>
+
+    <div class="formBox" id="hotel">
+
+        <div class="fbox">
+         <h3>酒店/别墅预订</h3>
+            <neq name="vo.hotelCity" velue=""><label>City 城市<div>{$vo.hotelCity}</div></label></neq>
+            <neq name="vo.hotelName" velue=""><label>Hotel/Villa 酒店别墅名称<div>{$vo.hotelName}</div></label></neq>
+            <neq name="vo.hotelCin" velue=""><label>Check In 入住日期<div>{$vo.hotelCin}</div></label></neq>
+            <neq name="vo.hotelCout" velue=""><label>Check Out 退房日期<div>{$vo.hotelCout}</div></label></neq>
+            <neq name="vo.hotelRoomType" velue=""><label>Room Type 房型<div>{$vo.hotelRoomType}</div></label></neq>
+            <neq name="vo.hotelBreak" velue=""><label>Breakfast 是否含早餐<div>{$vo.hotelBreak}</div></label></neq>
+            <neq name="vo.hotelRoomQTY" velue=""><label>Room QTY 房间/卧室数量<div>{$vo.hotelRoomQTY}</div></label></neq>
+            <neq name="vo.hotelArrive" velue=""><label>Arrive Time 到店时间<div>{$vo.hotelArrive}</div></label></neq>
+            <neq name="vo.hotelExtra" velue=""><label>Extra Bed 是否需要加床<div>{$vo.hotelExtra}</div></label></neq>
+            <neq name="vo.hotelBed" velue=""><label>Bed 双床/大床<div>{$vo.hotelBed}</div></label></neq>
+            <neq name="vo.hotelSmoking" velue=""><label>Smoking Floor 是否吸烟<div>{$vo.hotelSmoking}</div></label></neq>
+            <neq name="vo.hotelQTY" velue=""><label>QTY总人数<div>{$vo.hotelQTY}</div></label></neq>
+            <neq name="vo.hotelComments" velue=""><label>Comments 特殊要求<div>{$vo.hotelComments}</div></label></neq>
+
+            </div>
+    </div>
+
+    <div class="formBox" id="private">
+
+        <div class="fbox">
+         <h3>私人订制方案咨询</h3>
+            <neq name="vo.privateDeparture" velue=""><label>Departure 出发城市<div>{$vo.privateDeparture}</div></label></neq>
+            <neq name="vo.privateDestination" velue=""><label>Destination  目的地城市<div>{$vo.privateDestination}</div></label></neq>
+            <neq name="vo.privateHotel" velue=""><label>Hotel/Villa 理想酒店别墅名称<div>{$vo.privateHotel}</div></label></neq>
+            <neq name="vo.privateDate" velue=""><label>Travel Date 预计出行日期<div>{$vo.privateDate}</div></label></neq>
+            <neq name="vo.privateTill" velue=""><label>Travel Till 预计回程日期<div>{$vo.privateTill}</div></label></neq>
+            <neq name="vo.privateQTY" velue=""><label>QTY总人数<div>{$vo.privateQTY}</div></label></neq>
+            <neq name="vo.privateRoom" velue=""><label>Room QTY 房间数量<div>{$vo.privateRoom}</div></label></neq>
+            <neq name="vo.privateGuide" velue=""><label>Tour Guide 是否需要导游<div>{$vo.privateGuide}</div></label></neq>
+            <neq name="vo.privateCar" velue=""><label>Car Rental 是否需要用车<div>{$vo.privateCar}</div></label></neq>
+            <neq name="vo.privateBudget" velue=""><label>Budget 预算<div>{$vo.privateBudget}</div></label></neq>
+            <neq name="vo.privateLeisure" velue=""><label>Leisure/business<div>{$vo.privateLeisure}</div></label></neq>
+            <neq name="vo.privateTheme" velue=""><label>Theme 主题 <div>{$vo.privateTheme}</div></label></neq>
+            <neq name="vo.privateComments" velue=""><label>Comments 特殊要求<div>{$vo.privateComments}</div></label></neq>
+
+            </div>
+    </div>
+
+
+</div>
+
+</div>
+</div>
+<script>
+$J('#addForm .formBox').each(function(){	
+	if(!this.getElementsByTagName('LABEL').length){	
+		$(this).hide()
+	};
+	
+})
+</script>

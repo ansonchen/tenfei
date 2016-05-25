@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+<title>页面提示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv='Refresh' content='{$waitSecond};URL={$jumpUrl}'>
+<load href ="__PUBLIC__/Css/style.css" />
+</head>
+<body>
+<div class="message">
+<div class="message msg">
+    <h3>{$msgTitle}</h3>
+    <present name="message" >
+		<p class="ok">{$message}</p>
+	</present>
+   <present name="error" >
+       <p class="err">{$error}</p>
+	</present>
+	<present name="closeWin" >
+		系统将在 <span style="color:blue;font-weight:bold">{$waitSecond}</span> 秒后自动关闭，如果不想等待,直接点击 <a href="{$jumpUrl}">这里</a> 关闭 <br/>
+	</present>
+	<notpresent name="closeWin" >
+	    系统将在 <span style="color:blue;font-weight:bold">{$waitSecond}</span> 秒后自动跳转,如果不想等待,直接点击 <a href="{$jumpUrl}">这里</a> 跳转 <br/>
+	</notpresent>
+    
+</div>
+
+</div>
+</body>
+</html>
