@@ -2,7 +2,7 @@
 <form method="post" id="dformMenu">
   <fieldset>
   <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
- 
+
   <p>
     <label>名称</label>
     {$vo.title}
@@ -11,7 +11,7 @@
     <label>上级</label>
     <select name="pid" class="pid_node2" disabled="disabled">
      <option value="0" <eq name="$vo['pid']" value="0">selected</eq> level="0" >顶级</option>
-      <volist name='hmenu' id='option2' >
+      <volist name='omenu' id='option2' >
         <option value="{$option2.id}" <eq name="option2['id']" value="$vo['pid']">selected</eq> level="{$option2.level}" >{$option2.title} {$option2.name}</option>
       </volist>
     </select>
@@ -20,12 +20,9 @@
     <label>级别</label>
     <input name="level" type="hidden" class="level_node2" value="{$vo.level}">
     <span class="showLevel2">{$vo.level}</span> </p>
-  
-  <label>排序</label>
-  {$vo.sort}
-  </p>
+ 
   <p>
-    <input class="button" type="button" value="删除" id="delMenuBtn" />
+    <input class="button" type="button" value="Delete" id="delMenuBtn" />
     <!--  <input class="button"  onClick="ThinkAjax.sendForm('formMenu','__URL__/addMenus/','','result')"  type="button" value="添加" />-->
   </p>
   </fieldset>
@@ -39,7 +36,7 @@
 		
 		$J('#delMenuBtn').click(function(){
 		if(confirm('确定删除 {$vo.title} ？')){
-			ThinkAjax.sendForm('dformMenu','__URL__/delMenus/',completeTreeDel,'result');
+			ThinkAjax.sendForm('dformMenu','__URL__/delMenus/',complete,'result');
 		}
 		
 		
