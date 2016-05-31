@@ -1,23 +1,75 @@
 <?php
 class NewsAction extends CommonAction {
 
+     function _initialize() {
+                    		
+		
+        
+        //站点信息
+		$site = M('site'); // 实例化模型类  
+		 
+		$condition['id_site']	=	1;
+		
+		$siteD = $site->where($condition)->find(); // 查询数据   
+		
+		$this->assign('site',$siteD); // 模板变量赋值
+         
+        $Type = M('MenuTenfei'); 
+		$Tlist=$Type->order('sort desc')->select();		
+		$this->assign('otype',$Tlist);
+		
+           $newType = array();        
+        foreach ($Tlist as $key => $value)
+        {        
+            $newType[$value['id']] = $value['title'];
+        }
+    $this->assign('cntype',$newType);
+        
+    }
+    
+    public function build(){
+        
+        $DB = D('ArticleView'); 
+        $where['menu_pid'] = 122;
+        $DBlist = $DB->where($where)->order('id_article desc')->select(); 
+		//$this->assign('menub',$DBlist);
+        //$code =  str_replace("\\/", "//",json_encode($DBlist));
+        $code = json_encode($DBlist);
+        $content = 'var indexdb ='.$code.';';
+        
+       
+                         
+       // $content = file_get_contents("http://localhost/a.php");//得到文件执行的结果
+        $of = fopen('../Public/indexDB.js','w');//创建并打开dir.txt
+        if($of){
+         fwrite($of,$content);//把执行文件的结果写入txt文件
+         $this->ajaxReturn('','成功！',1);   
+        }
+        fclose($of);
+        //$this->display(); // 输出模板 
+
+    }
+    
 	// 框架首页 CommonAction
 	public function index() {
 	
 		import("ORG.Util.Page"); 
 	
 		$Article = D('ArticleView'); 
-		
+        
+        $pid = $_GET['pid'];
+		//$pid = 123;
 		$where['bORn_article'] = 'n';
+        $where['menu_pid'] = $pid;
 		if(!$_SESSION['administrator'])
 		{
-		$where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
+$where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
 		}
 
 		$count = $Article->where($where)->count();//计算总数
-		$p = new Page ( $count, 10 );
+        $p = new Page ( $count, 10 );
 		$Mlist=$Article->where($where)->limit($p->firstRow.','.$p->listRows)->order('id_article desc,writerId_article asc')->select();//findAll
-		$p->setConfig('header','篇新闻');
+		$p->setConfig('header','页面');
 
 		$p->setConfig('prev',"&laquo; 上一页");
 		$p->setConfig('next','下一页 &raquo;');
@@ -25,6 +77,7 @@ class NewsAction extends CommonAction {
 		$p->setConfig('last','最后一页 &raquo;');
 		$page = $p->show ();
 		$this->assign( "page", $page );
+        $this->assign( "ppid", $pid );
 			
 		//$Mlist = $Node->order('sort_node asc')->select(); 
 		
@@ -97,7 +150,7 @@ class NewsAction extends CommonAction {
 		if(!empty($_GET['id_article'])) {
  
 		 
-		$Article	=	M("Article");
+		$Article	=	D("ArticleView");
 		$condition['id_article']	=	$_GET['id_article'];
 		$vo = $Article->where($condition)->find(); // 查询数据   
 		

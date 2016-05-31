@@ -16,6 +16,15 @@ class MenuTenfeiAction extends CommonAction {
 		//$olist=$menu->order('sort asc')->select();
 		$this->assign('hmenu',$Mlist);
         
+        //站点信息
+		$site = M('site'); // 实例化模型类  
+		 
+		$condition['id_site']	=	1;
+		
+		$siteD = $site->where($condition)->find(); // 查询数据   
+		
+		$this->assign('site',$siteD); // 模板变量赋值
+        
     }
 	// 框架首页 CommonAction
 	public function index() {

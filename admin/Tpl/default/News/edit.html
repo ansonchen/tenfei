@@ -6,19 +6,22 @@
     <label>标题</label>
     <input class="text-input medium-input" type="text"  name="title_article" value="{$vo.title_article}" />
     <select name="typeIds_article">
-      <option value="1" >默认分类</option>
-      <volist name='otype' id='option' >
-        <eq name="option['belongType_type']" value="News"> <option value="{$option.id_type}" 
-          <eq name="option['id_type']" value="$vo['typeIds_article']">selected="selected"</eq>
-          >{$option.name_type}
-          </option>
-        </eq>
+      <volist name='otype' id='option' >    
+      <eq name="option['pid']" value="$vo.menu_pid">
+              <option value="{$option.id}"  <eq name="option['id']" value="$vo['typeIds_article']">selected="selected"</eq>
+              >{$option.title}</option>
+      </eq>
+      
       </volist>
     </select>
-    <label>副标题</label>
-    <input class="text-input medium-input" type="text"  name="subtitle_article" value="{$vo.subtitle_article}"/>
+      </p>
+        <p>
+        <if condition="$vo.menu_pid eq 122">
+          <label>摘要</label>
+           <textarea class="text-input textarea" name="summary_article" cols="79" rows="5">{$vo.summary_article}</textarea>
+</if>
     <label>内容</label>
-    <html:editor type="fckeditor" id="content_article2" width="700px" height="300px" name="content_article"  content="{$vo.content_article}"/>
+    <html:editor type="fckeditor" id="content_article2" width="98.5%" height="500px" name="content_article"  content="{$vo.content_article}"/>
   </p>
   <p>
     <input class="button" type="button" value="Update" id="editNewsBtn" />
@@ -28,13 +31,14 @@
   <div class="clear"></div>
   <!-- End .clear -->
   <input type="hidden" name="ajax" value="1" />
+  <input type="hidden" name="menu_pid" value="{$vo.menu_pid}" />
   <input type="hidden" name="id_article" value="{$vo.id_article}" />
 </form>
 <script>
 
 		$J('#editNewsBtn').click(function(){
 			saveEditor();//把FCK的内容保存到textar
-			ThinkAjax.sendForm('eformNews','__URL__/updateArticle/',complete,'result');
+			ThinkAjax.sendForm('eformNews','__URL__/updateArticle/',completePrev,'result');
 		
 		})
 		

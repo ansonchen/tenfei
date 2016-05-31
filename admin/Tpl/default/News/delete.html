@@ -6,10 +6,12 @@
   <p>
           <label>标题</label>
          {$vo.title_article} </p>
-        <p>
-          <label>副标题</label>
-          {$vo.subtitle_article}
-        </p>
+         
+          <if condition="$vo.menu_pid eq 122">
+       <p>
+          <label>摘要</label>
+          {$vo.summary_article}
+              </p></if>
        
         <p>
           <label>内容</label>
