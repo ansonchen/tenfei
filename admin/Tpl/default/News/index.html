@@ -120,10 +120,34 @@ $J(document).ready(function(){
               </eq>
             </volist>
           </select>
+           </p>
         <if condition="$ppid eq 122">
+         <p>
          <label>摘要</label>
            <textarea class="text-input textarea" name="summary_article" cols="79" rows="5"></textarea>
+           
+       
+          <label>图片</label>
+          
+          <ul class="shortcut-buttons-set" id="picList">
+        	<li><a class="shortcut-button selectPic" href="__APP__/Album/indexOne"><span>
+					<img src="__PUBLIC__/admin/resources/images/icons/image_add_48.png" id="selectImgObj" alt="icon" /><br />
+					选择图片
+				</span></a></li>
+                
+         
+        </ul>
+         <div class="clear"></div>
+          <input class="text-input small-input" type="text" name="picturePath" id="selectImgHide" />
+          <!-- Classes for input-notification: success, error, information, attention -->
+          </p>
+           
             </if>
+         
+           <p>
+          <label>排序</label>
+          <input class="text-input small-input" type="text" name="sort" />
+
           </p>
         <p>
 

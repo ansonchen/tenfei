@@ -15,11 +15,34 @@
       </volist>
     </select>
       </p>
-        <p>
+        
         <if condition="$vo.menu_pid eq 122">
+         <p>
           <label>摘要</label>
            <textarea class="text-input textarea" name="summary_article" cols="79" rows="5">{$vo.summary_article}</textarea>
+        
+          <label>图片</label>
+          
+          <ul class="shortcut-buttons-set" id="picList">
+        	<li><a class="shortcut-button selectPic" href="__APP__/Album/indexOne"><span>
+					<img src="{$vo.picturePath}" id="selectImgObj" alt="icon" /><br />
+					选择图片
+				</span></a></li>
+                
+         
+        </ul>
+         <div class="clear"></div>
+          <input class="text-input small-input" type="text" name="picturePath" value="{$vo.picturePath}" id="selectImgHide" />
+          <!-- Classes for input-notification: success, error, information, attention -->
+          </p>
+          
 </if>
+   <p>
+          <label>排序</label>
+          <input class="text-input small-input" type="text" name="sort" value="{$vo.sort}"/>
+
+          </p>
+          <p>
     <label>内容</label>
     <html:editor type="fckeditor" id="content_article2" width="98.5%" height="500px" name="content_article"  content="{$vo.content_article}"/>
   </p>

@@ -31,7 +31,8 @@ class NewsAction extends CommonAction {
         
         $DB = D('ArticleView'); 
         $where['menu_pid'] = 122;
-        $DBlist = $DB->where($where)->order('id_article desc')->select(); 
+        
+        $DBlist = $DB->where($where)->order('sort asc')->limit(3)->select(); 
 		//$this->assign('menub',$DBlist);
         //$code =  str_replace("\\/", "//",json_encode($DBlist));
         $code = json_encode($DBlist);

@@ -11,8 +11,21 @@
        <p>
           <label>摘要</label>
           {$vo.summary_article}
+             <label>图片</label>
+          
+          <ul class="shortcut-buttons-set" id="picList">
+        	<li><span>
+					<img src="{$vo.picturePath}" /><br />
+				
+				</span></li>
+                
+         
+        </ul>
               </p></if>
-       
+        <p>
+          <label>排序</label>
+         {$vo.sort}
+        </p>
         <p>
           <label>内容</label>
          {$vo.content_article}
