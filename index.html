@@ -14,17 +14,18 @@
 <img src="static/css/img/index/headbg.jpg" class="hide" alt="">
 <div class="head">
     <div class="menu cbox" >
-       <a href="/" >加入腾晖</a>
-       <a href="/" >企业运营</a>
-       <a href="/" >公司动态</a>
-       <a href="about.html" >腾晖科技</a>
+        <a href="/Join" >加入腾晖</a>
+       <a href="/Manufacturing">企业运营</a>
+       <a href="#J_iconlist">服务</a>       
+       <a href="/News" >公司动态</a>
+       <a href="/About" >腾晖科技</a>
        <a href="/" class="cur" >首页</a>
 
        
         <a href="/" class="logo"></a>
     </div>
-    <div class="cbox news">
-    <a href="#" class="more">所有新闻</a>
+    <div class="cbox news" id="newsBox">
+    <a href="/News" class="more">所有新闻</a>
     <a href="#"  class="item"> 
         <img src="static/css/img/index/new1.jpg" alt="">
         <em>腾晖科技重大资产重组工作取得实质性进展</em>
@@ -118,7 +119,7 @@
 <div class="cbox ltab">
 
 	<div class="text">
-		<h3>经曲案例展示</h3>
+		<h3>经典案例展示</h3>
 		<div class="lab" id="J_ltabs">
 			<a href="#" id="J_linkl_1" class="cur">珠海</a>
 			<a href="#" id="J_linkl_2" >横琴</a>
@@ -151,7 +152,9 @@
     <div class="cbox">
        <h3>腾飞中国，晖耀未来</h3>
         <div class="time" id="J_time_tab">            
-            <a href="#" id="J_hlink" class="cur"><i>2014</i></a>
+            <a href="#" id="J_hlink" class="cur"><i>2016</i></a>
+            <a href="#"><i>2015</i></a>
+            <a href="#"><i>2014</i></a>
             <a href="#"><i>2013</i></a>
             <a href="#"><i>2012</i></a>
             <a href="#"><i>2011</i></a>
@@ -159,11 +162,25 @@
             <a href="#"><i>2009</i></a>
             <a href="#"><i>2008</i></a>
             <a href="#"><i>2007</i></a>
-            <a href="#"><i>2006</i></a>
-            <a href="#"><i>2005</i></a>
+            
         </div>
-        <div id="J_tcon">         
-        <ul id="J_hcu">
+        <div id="J_tcon">    
+        <ul  id="J_hcu">
+           <li>1月 与珠海高新技术产业开发区管理委员会签定项目投资协议。</li>
+<li>2月 认购广州易达建信科技开发有限公司51.00%的股权，成为易达科技控股股东。</li>
+<li>3月 顺利通过通过ISO9001：2008质量管理体系认证。</li>
+<li>5月 荣获“2013-2015连续三年广东省诚信示范企业”。</li>
+<li>5月 成功申请 “一种电子安全帽” 实用新型专利。</li>
+        </ul>
+        <ul class="hide">
+           
+           <li>4月 荣获“2014年度珠海市最具成长性软件企业”。</li>
+<li>6月 荣获“2013-2014连续二年广东省诚信示范企业”。</li>
+<li>7月 着手参与住房和城乡建设部信息中心组织的《建筑工程施工现场监管信息系统技术规程》编制工作。</li>
+<li>12月 公司获得“广东省工程技术研究中心”认定。</li>
+        </ul>
+             
+        <ul class="hide">
             <li>1月 公司正式在新三板挂牌上市</li>
              <li>4月 荣获2013年度广东省诚信示范企业</li>
              <li>9月 荣获“2014年度中国建筑行业信息化最佳解决方案奖”</li>
@@ -202,12 +219,7 @@
         <ul class="hide">
             <li>11月 获得《平安卡管理系统》计算机软件著作权登记证书</li>
         </ul>
-        <ul class="hide">
-            <li>建筑工人“平安卡”制度在广东省建筑领域内率先实施</li>
-        </ul>
-        <ul class="hide">
-            <li>9月 广东腾晖信息科技开发有限公司正式成立。</li>
-        </ul>
+        
         </div>
     </div>
     
@@ -231,28 +243,18 @@
    <div class="cbox">
     <a href="/" class="logo"></a>
     <div class="code"></div>
-    <div class="text links">
-        <a href="#">关于我们</a>
-        <a href="#">企业新闻</a>
-        <a href="#">解决方案</a>
-        <a href="#">人力资源</a>
-    </div>
-    <div class="text">
-        建筑业从业人员实名制管理子系统<br />
-建设工程安全监督综合管理平台<br />
-塔机运行监控系统<br />
-建设工程项目管理人员指纹登记系统
-    </div>
-    <div class="text sec">
-建设工程管理人员在岗信息管理系统<br />
-建筑起重设备管理系统<br />
-建筑施工现场远程视频监控系统<br />
-电子标签应用系统
-    </div>
+    <div class="centext">
+        <a href="/">首页</a>
+        <a href="/About" >腾晖科技</a>
+       <a href="/News" >公司动态</a>
+       <a href="/Manufacturing">企业运营</a>
+        <a href="/Join" >加入腾晖</a>
+       </div>
     <p class="copyright">广东东腾晖信息科技开发股份有限公司 © Copyright 2005 - 2016.</p>
     </div>
 </div>
 </body>
 <!--<script type="application/javascript" src="static/js/data-include.js"></script>-->
+<script type="text/javascript" src="Public/indexDB.js"></script>
 <script type="text/javascript" src="static/js/index.js"></script>
 </html>

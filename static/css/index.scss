@@ -559,10 +559,32 @@ ul.circle {list-style-type:disc}
         right: 0;
         top:99px;
     }
+    
+    .centext{
+        position: absolute;
+        top:127px;
+        left:312px;
+        display: block;
+        width: 610px;
+        height: 89px;
+        border-right:1px solid #fff;
+        text-align: center;
+        line-height: 49px;
+        
+        a{
+            color: #f19826;
+            margin: 0 20px;
+            line-height: 24px;
+            &:hover{
+                opacity: .5;
+            }
+        } 
+    }
+    
     .copyright{
         position: relative;
-        top: 310px;
-        text-align: right;
+        top: 180px;
+        left:404px;
         color: #bfbfbf;
     }
     .text{

@@ -1,6 +1,28 @@
 function init(){
-    
+        
     var d = document;
+    //产品
+    var newsBox = d.getElementById('newsBox');
+  
+    if(newsBox){
+        
+    var html = '<a href="/News" class="more">所有新闻</a>'; 
+     
+    for(var i = 0,j = indexdb.length; i<j;i++ ){
+        html +='<a href="/Newsitem/?id=' + indexdb[i]['id_article'] +'"  class="item">';        
+        html+='<img src="'+ indexdb[i]['picturePath'] +'">';
+        html+='<em>'+ indexdb[i]['title_article'] +'</em>' + indexdb[i]['summary_article'];
+        html+='</a>'
+    }
+    
+   newsBox.innerHTML = html;
+   html = null;
+    
+    }
+
+
+
+    
     //产品
     var tabs = d.getElementById('J_tabs');
 

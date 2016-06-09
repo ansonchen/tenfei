@@ -202,6 +202,7 @@ body{ background: #f9f9f9}
             font-size:14px;
             p{margin:12px 0}
             em{ font-style: normal; color: #0e6ab4}
+            img{ max-width: 717px}
             
                 
         }
@@ -274,10 +275,32 @@ body{ background: #f9f9f9}
         right: 0;
         top:99px;
     }
+    
+    .centext{
+        position: absolute;
+        top:127px;
+        left:312px;
+        display: block;
+        width: 610px;
+        height: 89px;
+        border-right:1px solid #fff;
+        text-align: center;
+        line-height: 49px;
+        
+        a{
+            color: #f19826;
+            margin: 0 20px;
+            line-height: 24px;
+            &:hover{
+                opacity: .5;
+            }
+        } 
+    }
+    
     .copyright{
         position: relative;
-        top: 310px;
-        text-align: right;
+        top: 180px;
+        left:404px;
         color: #bfbfbf;
     }
     .text{

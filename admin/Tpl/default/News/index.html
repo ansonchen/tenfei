@@ -20,7 +20,8 @@ $J(document).ready(function(){
 		});
             
     
-		$J('a.delArticle').facebox();
+		$J('a.selectPic,a.delArticle').facebox();
+        
 		//翻页ajax
 		$J('a.editArticle,.pagination>a').click(function(){
 		var href = this.href;

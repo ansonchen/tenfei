@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="__ROOT__/static/css/item.css">
+<title>关于我们-腾晖科技有限公司</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+<div class="head">
+    <div class="menu cbox" >
+     <a href="/Join" >加入腾晖</a>
+       <a href="/Manufacturing">企业运营</a>
+       <a href="/News" class="cur">公司动态</a>
+       <a href="/About" >腾晖科技</a>
+       <a href="/"  >首页</a>
+
+       
+        <a href="/" class="logo"></a>
+    </div>
+    <h2>{$cntype[$vo[menu_pid]]}</h2>
+</div>
+<div class="cbox conbox">
+    <div class="mb"><a href="/">首页 </a> > <a href="/News?type={$vo[typeIds_article]}">{$cntype[$vo[typeIds_article]]}</a></div>
+    <div class="leftnav">
+        <volist name='otype' id='option' >
+            	<eq name="option['pid']" value="$vo[menu_pid]">
+              <a href="/News?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
+              </eq>
+            </volist>
+ 
+    </div>
+     <div class="conzone">
+        
+        <h3>{$vo.title_article}</h3>
+        <div class="text">
+            {$vo.content_article}
+        </div>
+    </div>
+</div>
+<div class="footer">
+   <div class="cbox">
+    <a href="/" class="logo"></a>
+    <div class="code"></div>
+    <div class="centext">
+        <a href="/">首页</a>
+        <a href="/About" >腾晖科技</a>
+       <a href="/News" >公司动态</a>
+       <a href="/Manufacturing">企业运营</a>
+        <a href="/Join" >加入腾晖</a>
+       </div>
+    <p class="copyright">广东东腾晖信息科技开发股份有限公司 © Copyright 2005 - 2016.</p>
+    </div>
+</div>
+</body>
+
+</html>
