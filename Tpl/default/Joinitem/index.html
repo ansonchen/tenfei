@@ -10,12 +10,11 @@
 <body>
 <div class="head">
     <div class="menu cbox" >
-     
-        <a href="/Join" >加入腾晖</a>
-       <a href="/Manufacturing">企业运营</a>
+     <a href="/Join"  class="cur" >加入腾晖</a>
+       <a href="/Manufacturing" >企业运营</a>
        <a href="/#J_iconlist">服务</a>
        <a href="/News">公司动态</a>
-       <a href="/About"  class="cur">腾晖科技</a>
+       <a href="/About" >腾晖科技</a>
        <a href="/"  >首页</a>
 
        
@@ -24,15 +23,14 @@
     <h2>{$cntype[$vo[menu_pid]]}</h2>
 </div>
 <div class="cbox conbox">
-    <div class="mb"><a href="/">首页 </a> > {$cntype[$vo[typeIds_article]]}</div>
+    <div class="mb"><a href="/">首页 </a> > <a href="/Join?type={$vo[typeIds_article]}">{$cntype[$vo[typeIds_article]]}</a></div>
     <div class="leftnav">
         <volist name='otype' id='option' >
             	<eq name="option['pid']" value="$vo[menu_pid]">
-              <a href="?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
+              <a href="/Join?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
               </eq>
             </volist>
-                
-
+ 
     </div>
      <div class="conzone">
         
