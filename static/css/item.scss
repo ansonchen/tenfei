@@ -190,8 +190,8 @@ body{ background: #f9f9f9}
             color: #444;
             font-weight: 400;
             font-size: 24px;
-            height: 44px;
-            line-height: 44px;
+            line-height: 1.2em;
+            padding: 8px 0 12px 0;
             border-bottom: 1px solid #bfbfbf;
             margin: 0;
         }
@@ -212,6 +212,7 @@ body{ background: #f9f9f9}
             li{ display: block;
                 height: 48px;
                 line-height: 48px;
+                overflow: hidden;
                 border-bottom: 1px dashed #bfbfbf;
                 font-size: 14px;
                 

@@ -9,8 +9,10 @@ function init(){
     var html = '<a href="/News" class="more">所有新闻</a>'; 
      
     for(var i = 0,j = indexdb.length; i<j;i++ ){
+        
+    var picsrc = indexdb[i]['picturePath']!= '' ? indexdb[i]['picturePath'] : ('static/css/img/index/new'+(i+1)+'.jpg');
         html +='<a href="/Newsitem/?id=' + indexdb[i]['id_article'] +'"  class="item">';        
-        html+='<img src="'+ indexdb[i]['picturePath'] +'">';
+        html+='<img src="'+ picsrc +'">';
         html+='<em>'+ indexdb[i]['title_article'] +'</em>' + indexdb[i]['summary_article'];
         html+='</a>'
     }
