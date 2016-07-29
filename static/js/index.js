@@ -225,7 +225,7 @@ function init(){
     }
 
     var num1 = d.getElementById('num1');
-    
+    if(num1){
     var wh = window.innerHeight;
 
     var bec = num1.getBoundingClientRect().top;
@@ -273,7 +273,7 @@ function init(){
 
         }
     }
-    
+    }
 }
 
 init();

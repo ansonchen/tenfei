@@ -49,14 +49,13 @@ a{ text-decoration: none;}
 }
 body{ background: #f9f9f9}
 .head{
-    height: 502px;
+    height: 504px;
     min-width: $Cwidth;
-    background: #f9f9f9 url(img/item/itembg.jpg) no-repeat center top;
+    background: #f9f9f9 url(img/item/item_bg.jpg) no-repeat center top;
     overflow: hidden;
-    .menu{
+   .menu{
         height: 90px;
         margin-top: 25px;
-        background: url(img/Menu_bg.jpg) repeat-x center center;
        
         
         a{
@@ -91,18 +90,31 @@ body{ background: #f9f9f9}
             }
             
         }
-         .logo{
-            margin-left: 40px;
+        .logo{
+            margin-left: 35px;
             width: 180px;
             height: 90px;
             display: block;
-            background: url(img/logo.jpg) no-repeat center center;
             float: left;
              margin-right: 0px;
              &:after{
                  border: none;
                  
              }
+        }
+        &.nbox .logo{
+            margin-left: 105px;
+            
+        }
+        .code{
+            
+            width: 62px;
+            height: 46px;
+            display: block;
+            float: left;
+             margin-left: 10px;
+            margin-top: 20px;
+            margin-right: 0;
         }
     
     }

@@ -11,8 +11,8 @@
 <div class="head">
     <div class="menu cbox" >
      
-        <a href="/Info" >信息披露</a>
-        <a href="/Join"  class="cur" >人力资源</a>
+        <a href="/Info"  class="cur" >信息披露</a>
+        <a href="/Join" >人力资源</a>
        <a href="/Manufacturing">案例展示</a>     
        <a href="/News" >新闻中心</a>
        <a href="/About" >关于我们</a>
@@ -24,11 +24,11 @@
     <h2>{$cntype[$vo[menu_pid]]}</h2>
 </div>
 <div class="cbox conbox">
-    <div class="mb"><a href="/">首页 </a> > <a href="/Join?type={$vo[typeIds_article]}">{$cntype[$vo[typeIds_article]]}</a></div>
+    <div class="mb"><a href="/">首页 </a> > <a href="/Info?type={$vo[typeIds_article]}">{$cntype[$vo[typeIds_article]]}</a></div>
     <div class="leftnav">
         <volist name='otype' id='option' >
             	<eq name="option['pid']" value="$vo[menu_pid]">
-              <a href="/Join?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
+              <a href="/Info?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
               </eq>
             </volist>
  

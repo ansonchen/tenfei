@@ -47,16 +47,21 @@ a{ text-decoration: none;}
 	margin: 0 auto;
     
 }
+.nbox{
+    width: 1380px;
+	margin: 0 auto;
+    
+}
 body{ background: #f9f9f9}
 .head{
-    height: 1173px;
+    height: 1149px;
     min-width: $Cwidth;
-    background: #f9f9f9 url(img/index/headbg.jpg) no-repeat center top;
+    background: #f9f9f9 url(img/index/index_bg.jpg) no-repeat center top;
     overflow: hidden;
+    position: relative;
     .menu{
         height: 90px;
         margin-top: 25px;
-        background: url(img/Menu_bg.jpg) repeat-x center center;
        
         
         a{
@@ -91,12 +96,11 @@ body{ background: #f9f9f9}
             }
             
         }
-         .logo{
-            margin-left: 40px;
+        .logo{
+            margin-left: 35px;
             width: 180px;
             height: 90px;
             display: block;
-            background: url(img/logo.jpg) no-repeat center center;
             float: left;
              margin-right: 0px;
              &:after{
@@ -104,13 +108,45 @@ body{ background: #f9f9f9}
                  
              }
         }
+        &.nbox .logo{
+            margin-left: 105px;
+            
+        }
+        .code{
+            
+            width: 62px;
+            height: 46px;
+            display: block;
+            float: left;
+             margin-left: 10px;
+            margin-top: 20px;
+            margin-right: 0;
+        }
     
     }
     
+    .mp4{
+            
+            width: 563px;
+            height: 351px;
+            display: block;
+position: absolute;
+        right: 66px;
+        top:247px;
+        }
+    .textGif{
+        
+        width: 544px;
+            height: 74px;
+            display: block;
+position: absolute;
+        left: 144px;
+        top:336px;
+    }
     .news{ 
         position: relative;    
         height: 408px;
-        margin-top: 498px;
+        margin-top: 590px;
         
         .more{
             width: 84px;
@@ -119,10 +155,10 @@ body{ background: #f9f9f9}
             line-height: 34px;
             font-size: 14px;
             color: #fff;
-            background: #8c8c8c;
+            background: #474747;
             position: absolute;
-            top: 426px;
-            right:6px;
+            top: 360px;
+            right:0px;
             &:hover{
             opacity: .8
             }
@@ -132,30 +168,38 @@ body{ background: #f9f9f9}
     }
     .item{
     
-        width: 353px;
-        height: 360px;
+        width: 308px;
+        height: 307px;
         float: left;
-        margin: 28px 30px 0;    
+        margin:0 12px 0 0;   
+        padding: 12px 14px;
+        background: #e7e7e7;
         color:#565656;
         font-size: 14px;
         line-height: 24px;
-        img{width: 353px;height: 190px; margin-bottom: 15px}
+        img{width: 308px;height: 166px;}
         em{ font-style: normal;line-height: 30px; height: 60px; overflow: hidden; margin-bottom: 16px;display: block; font-size: 18px;color: #444444;}
         
         &:hover{
             opacity: .8
         }
         
-    
+        &:last-child{
+            
+            margin-right: 0;
+        }
     
         
     }
+    
+    
+    
 
 }
 .welcome{
-    height: 864px;
+    height: 468px;
     min-width: $Cwidth;
-    background: url(img/index/headbg2.jpg) no-repeat center center;
+    background: url(img/index/index_bg2.jpg) no-repeat center center;
     overflow: hidden;
     color: #fff;
     h3{text-align: center;
@@ -369,8 +413,9 @@ body{ background: #f9f9f9}
 ul.circle {list-style-type:disc}
 .history{
 
+    .cbox{ width: 1180px;padding-left: 60px;}
     height: 538px;
-    background: url(img/index/bg10.jpg) no-repeat center center;
+    background: url(img/index/index_bg3.jpg) no-repeat center center;
     overflow: hidden;
     min-width: $Cwidth;
     h3{
@@ -471,11 +516,11 @@ ul.circle {list-style-type:disc}
     ul{
        clear: both;
        list-style-type: disc;
-       padding-left: 30px;
+       padding-left: 0px;
        margin:  36px 0 0 0;
         li{
             font-size: 20px;
-            list-style-type: disc;
+            list-style-type: none;
             color: #fff;
             display:list-item;
             line-height: 34px;
