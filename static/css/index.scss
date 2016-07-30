@@ -334,11 +334,12 @@ position: absolute;
 				}	
 		}
 		.con{
-			img{ max-width: $Cwidth; margin: 30px auto; }
+			img{ max-width: $Cwidth; margin: 30px auto; display: block;}
 			overflow: hidden;
 			color: #565656;
 			font-size: 20px;
 			line-height: 1.7;
+            padding: 0 40px;
 			p{
 				margin: 1em 0;
 			}
@@ -624,12 +625,32 @@ ul.circle {list-style-type:disc}
                 opacity: .5;
             }
         } 
+        
+        
     }
-    
+    .dropList{ 
+        position: absolute;
+        background: #fff url(img/index/arr_bg.jpg) no-repeat  216px 13px;
+        top:136px;
+        z-index: 3;
+        left:382px;width: 232px;height: 32px;border: 1px solid #edaf58; line-height: 32px; font-size: 14px;color: #7b7b7b; overflow: hidden;text-indent: 24px;
+            a{
+                
+               color: #000000; font-size: 14px; line-height: 24px;display:block;background: #fff; text-indent: 24px;
+                &:hover{ background: #cacaca }
+            }
+            &:hover{
+                
+                height: auto;
+            }
+        }
+        
+        .gobtn{background: #edaf58; font-size: 14px; color: #fff;height: 34px;width: 56px;display: block;position: absolute;top:136px; left: 618px;line-height: 34px; text-align: center;}
     .copyright{
         position: relative;
-        top: 180px;
-        left:404px;
+        top: 190px;
+        left:382px;
+        z-index: 1;
         color: #bfbfbf;
     }
     .text{
