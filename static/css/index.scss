@@ -1,7 +1,7 @@
 @import "../bourbon/_bourbon.scss";
 @import "normalize";
 
-$Cwidth:1240px;
+$Cwidth:1380px;
 
 * {
     font-family:  "Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif;
@@ -124,29 +124,39 @@ body{ background: #f9f9f9}
         }
     
     }
-    
-    .mp4{
+    .media{
+        
+        height: 580px;
+        overflow: hidden;
+        position: relative;
+            .mp4{
             
             width: 563px;
-            height: 351px;
+            height: 353px;
             display: block;
-position: absolute;
-        right: 66px;
-        top:247px;
-        }
-    .textGif{
-        
-        width: 544px;
+            position: absolute;
+            right: 46px;
+            top:131px;
+            overflow: hidden;
+                img{ width: 563px;
+                height: 353px;}
+            }
+        .textGif{
+
+            width: 544px;
             height: 74px;
             display: block;
-position: absolute;
-        left: 144px;
-        top:336px;
+            position: absolute;
+            left: 128px;
+            top:227px;
+        }
+    
     }
+    
+
     .news{ 
         position: relative;    
         height: 408px;
-        margin-top: 590px;
         
         .more{
             width: 84px;
@@ -416,7 +426,7 @@ ul.circle {list-style-type:disc}
 
     .cbox{ width: 1180px;padding-left: 60px;}
     height: 538px;
-    background: url(img/index/index_bg3.jpg) no-repeat center center;
+    background: url(img/index/index_history.jpg) no-repeat center center;
     overflow: hidden;
     min-width: $Cwidth;
     h3{
@@ -567,7 +577,7 @@ ul.circle {list-style-type:disc}
         border:1px solid #adadad;
         position: absolute;
         bottom: 245px;
-        left: 86px;
+        left: 150px;
             
             
     }
@@ -680,7 +690,7 @@ ul.circle {list-style-type:disc}
 }
 
 .hide{ display: none}
-
+.hideo{  opacity: 0;}
 
 .zoomIn{
      @include anInit(zoomIn);
@@ -722,5 +732,5 @@ ul.circle {list-style-type:disc}
 
 
 .fadeIn{
-@include anInit(fadeIn,0.5s);
+@include anInit(fadeIn,1s);
 }

@@ -21,7 +21,9 @@
         <a href="/" class="logo"></a>
         <a href="http://www.neeq.com.cn/nq/listedcompany.html" target="_blank" class="code"></a>
     </div>
-    <h2>{$cntype[$ppid]}</h2>
+    <div class="cbox">
+        <h2>{$cntype[$ppid]}</h2>
+    </div>
 </div>
 <div class="cbox conbox">
     <div class="mb"><a href="/">首页 </a> > {$cntype[$xpid]}</div>
@@ -50,16 +52,19 @@
    <div class="cbox">
     <a href="/" class="logo"></a>
     <div class="code"></div>
-    <div class="centext">
-        <a href="/">首页</a>
-        <a href="/About" >腾晖科技</a>
-       <a href="/News" >公司动态</a>
-       <a href="/Manufacturing">企业运营</a>
-        <a href="/Join" >加入腾晖</a>
+
+    <div class="dropList" id="dropList">
+       
        </div>
+    <a  id="gobtn" class="gobtn" target="_blank">前往</a>
     <p class="copyright">广东东腾晖信息科技开发股份有限公司 © Copyright 2005 - 2016.</p>
     </div>
 </div>
 </body>
+
+<script type="text/javascript" src="Public/indexCon.js"></script>
+<script type="text/javascript" src="static/js/drowlist.js"></script>
+
+
 
 </html>

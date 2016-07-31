@@ -22,8 +22,12 @@ function init(){
     
     }
 
-
-
+    d.getElementById('productys').innerHTML =  indexCon[0].part1_site;
+    d.getElementById('J_iconlist').innerHTML =  indexCon[0].part2_site;
+    d.getElementById('demo_J').innerHTML =  indexCon[0].part3_site;
+    d.getElementById('history_J').innerHTML =  indexCon[0].part4_site;
+   // d.getElementById('dropList').innerHTML =  indexCon[0].part5_site;
+   
     
     //产品
     var tabs = d.getElementById('J_tabs');
@@ -169,7 +173,37 @@ function init(){
         html = null;
         return false;
     }
-                                         
+                          
+    
+    if(J_iconlist){
+        
+        var wh = window.innerHeight;
+
+        var bec = J_iconlist.getBoundingClientRect().top;
+
+        if ( (wh -100) > bec  ) {
+
+
+            J_iconlist.className = "cbox iconlist fadeIn";
+
+        }
+        else{
+
+            window.onscroll = function () {
+
+               var bec = J_iconlist.getBoundingClientRect().top;
+
+
+                if ( (wh -100) > bec  ) {
+
+                     J_iconlist.className = "cbox iconlist fadeIn";
+                    window.onscroll = null;
+
+                }
+
+            }
+        }
+    }
     
     
     

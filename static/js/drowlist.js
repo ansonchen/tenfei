@@ -1,5 +1,7 @@
 !function(){
     
+    document.getElementById('dropList').innerHTML =  indexCon[0].part5_site;
+    
     var dropList = document.getElementById('dropList');
     if(!dropList) return false;
     

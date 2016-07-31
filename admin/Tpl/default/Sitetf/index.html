@@ -1,0 +1,109 @@
+
+<script>
+	$J(document).ready(function(){
+		//选择父id
+	
+		
+		//添加菜单
+		$J('#editSiteBtn').click(function(){
+			ThinkAjax.sendForm('formSite','__URL__/editSite/',completeN,'result');
+		})
+        
+         $J('#buildJsonBtn').click(function(){
+		if(confirm('确定更新？')){
+			ThinkAjax.sendForm('formSite','__URL__/build/',complete,'result');
+		}
+		
+		
+		});
+		
+		//翻页ajax
+		$J('.pagination>a').click(function(){
+		var href = this.href;
+		mainLoad(href)
+		
+		return false;
+		})
+
+	})
+
+        </script>
+<!--[if IE]><script type="text/javascript" src="resources/scripts/jquery.bgiframe.js"></script><![endif]-->
+<!-- Internet Explorer .png-fix -->
+<!--[if IE 6]>
+			<script type="text/javascript" src="resources/scripts/DD_belatedPNG_0.0.7a.js"></script>
+			<script type="text/javascript">
+				DD_belatedPNG.fix('.png_bg, img, li');
+			</script>
+		<![endif]-->
+<!-- Main Content Section with everything -->
+
+<noscript>
+<!-- Show a notification if the user has disabled javascript -->
+<div class="notification error png_bg">
+  <div>Javascript没有启用或您的浏览器不支持Javascript.请 <a href="http://browsehappy.com/" title="更好的浏览器">下载更新</a>您的浏览器,或者去<a href="http://www.google.com/support/bin/answer.py?answer=23852" title="去google搜索允许Javascript">Google搜索</a>允许Javascript</div>
+</div>
+</noscript>
+<div class="content-box">
+  <!-- Start Content Box -->
+  <div class="content-box-header">
+    <h3>首页配置</h3>
+
+  </div>
+  <!-- End .content-box-header -->
+  <div class="content-box-content">
+    
+    <!-- End #tab1 -->
+    <div class="tab-content" >
+      <form method="post" id="formSite">
+        <fieldset>
+        
+         	  	 	 	 
+        
+        <p>
+          <label>核心产品优势</label>
+           <textarea class="text-input textarea" name="part1_site" cols="79" rows="5">{$sitetf.part1_site}</textarea>
+        </p>
+        
+        <p>
+          <label>小图标</label>
+           <textarea class="text-input textarea" name="part2_site" cols="79" rows="5">{$sitetf.part2_site}</textarea>
+        </p>
+        <p>
+          <label>经典案例展示</label>
+           <textarea class="text-input textarea" name="part3_site" cols="79" rows="5">{$sitetf.part3_site}</textarea>
+        </p>
+        <p>
+          <label>历史</label>
+           <textarea class="text-input textarea" name="part4_site" cols="79" rows="5">{$sitetf.part4_site}</textarea>
+        </p>
+        <p>
+          <label>底部连接</label>
+           <textarea class="text-input textarea" name="part5_site" cols="79" rows="5">{$sitetf.part5_site}</textarea>
+        </p>
+
+        <p>
+        <input type="hidden" name="id_site" value="{$sitetf.id_site}" />
+          <input class="button" type="button" value="Update" id="editSiteBtn" />
+ 
+   <button id="buildJsonBtn" class="button" type="button" value="Create" >更新首页新闻</button>
+
+          <!--  <input class="button"  onClick="ThinkAjax.sendForm('formMenu','__URL__/addMenus/','','result')"  type="button" value="添加" />-->
+        </p>
+        </fieldset>
+        <div class="clear"></div>
+        <!-- End .clear -->
+        <input type="hidden" name="ajax" value="1" />
+      </form>
+    </div>
+    <!-- End #tab2 -->
+  </div>
+  <!-- End .content-box-content -->
+</div>
+<!-- End .content-box -->
+<!-- Start Notifications -->
+
+<!-- End Notifications -->
+<div id="footer"> <small>
+  <!-- Remove this notice or replace it with whatever you want -->
+  {$site.copyright_site} |  <a href="#">Top</a> </small> </div>
