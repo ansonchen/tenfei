@@ -365,9 +365,11 @@ body{ background: #f9f9f9}
 	.detail{
 		height: 200px;
 		padding: 0 10px;
+        margin: 0 71px;
 		border-top: 1px solid #dadada;
 		clear: both;
 		color: #565656;
+        
 		p{
 			font-size: 18px;	
 			line-height: 1.7;
@@ -402,6 +404,7 @@ body{ background: #f9f9f9}
 		&.nm{
 			margin-right: 0px;
 		}
+        &:nth-child(1){ margin-left: 71px;}
 		&:nth-child(2) i{background-position: center -218px}
 		&:nth-child(3) i{background-position: center -218px * 2}
 		&:nth-child(4) {
@@ -409,7 +412,10 @@ body{ background: #f9f9f9}
             i{background-position: center -218px * 4;}
         }
 		
-		&:nth-child(6) i{background-position: center -218px * 3}
+        &:nth-child(6) {
+            margin-left: 71px;
+            i{background-position: center -218px * 3}
+        }
 		&:nth-child(7) i{background-position: center -218px * 5}
 		&:nth-child(8) i{background-position: center -218px * 6}
 		&:nth-child(9) {
