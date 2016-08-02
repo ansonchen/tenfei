@@ -53,7 +53,7 @@ body{ background: #f9f9f9}
     min-width: $Cwidth;
     background: #f9f9f9 url(img/item/item_bg.jpg) no-repeat center top;
     overflow: hidden;
-   .menu{
+       .menu{
         height: 90px;
         margin-top: 25px;
        
@@ -102,7 +102,7 @@ body{ background: #f9f9f9}
                  
              }
         }
-        &.nbox .logo{
+        &.nbox .logo,&.cbox .logo{
             margin-left: 105px;
             
         }
@@ -136,11 +136,11 @@ body{ background: #f9f9f9}
 .conbox{
 
     min-height: 600px;
-        background: #ffffff;
+        background: #fff ;
         margin-top: -183px;
         margin-bottom: 87px;
     overflow: hidden;
-    
+   
     .mb{
         height: 45px;
         overflow: hidden;
@@ -154,8 +154,7 @@ body{ background: #f9f9f9}
        
         }
         
-    }
-    
+    }    
     .leftnav{
         width:271px;
         float: left;
@@ -164,7 +163,7 @@ body{ background: #f9f9f9}
         padding-top: 10px;
         a{
             color: #0e6ab4;
-            border-left: 2px solid #fff;
+            border-left: 2px solid transparent ;
             padding: 0 22px; 
             margin-bottom: 25px;
             display: inline-block;
@@ -208,6 +207,13 @@ body{ background: #f9f9f9}
             padding: 8px 0 12px 0;
             border-bottom: 1px solid #bfbfbf;
             margin: 0;
+            em{
+                
+                font-size: 14px;
+                color: #bfbfbf;
+                font-style: normal;
+                display: block;
+            }
         }
         .text{
             padding: 14px 0;
@@ -257,7 +263,9 @@ body{ background: #f9f9f9}
             }
             }
     }
-    
+     &.item{ opacity: .9;
+         h3{min-height:2em}
+    }
 }
 
 .footer{

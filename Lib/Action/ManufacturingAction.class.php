@@ -37,12 +37,17 @@ class ManufacturingAction extends CommonAction{
         }   
 
 			
-        $Article	=	M("Article");
+        $Article	=	D("Article");
             
 		$condition['typeIds_article']	=	$xpid;
             
 		$vo = $Article->where($condition)->order('sort asc')->find(); // 查询数据   
 			if($vo) {
+                 $data = array();
+                $data['hit_num'] = $vo['hit_num'] + 1;
+                
+                $Article->where($condition)->save($data);			   
+                $vo['hit_num'] = $data['hit_num'];
 				$this->assign('vo',$vo);
 				$this->display();
 			}else{

@@ -25,7 +25,7 @@
     <h2>{$cntype[$vo[menu_pid]]}</h2>
     </div>
 </div>
-<div class="cbox conbox">
+<div class="cbox conbox item">
     <div class="mb"><a href="/">首页 </a> > <a href="/Join?type={$vo[typeIds_article]}">{$cntype[$vo[typeIds_article]]}</a></div>
     <div class="leftnav">
         <volist name='otype' id='option' >
@@ -37,7 +37,7 @@
     </div>
      <div class="conzone">
         
-        <h3>{$vo.title_article}</h3>
+        <h3>{$vo.title_article}<em>发布时间：{$vo.updateTime_article|date='Y-m-d H:s:m',###}　　　　点击总数：{$vo.hit_num}</em></h3>
         <div class="text">
             {$vo.content_article}
         </div>
