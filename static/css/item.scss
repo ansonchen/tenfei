@@ -333,8 +333,10 @@ body{ background: #f9f9f9}
                 &:hover{ background: #cacaca }
             }
             &:hover{
-                
                 height: auto;
+                max-height: 160px;                
+                overflow: auto;
+                
             }
         }
         

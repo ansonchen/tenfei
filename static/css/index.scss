@@ -656,8 +656,9 @@ ul.circle {list-style-type:disc}
                 &:hover{ background: #cacaca }
             }
             &:hover{
-                
                 height: auto;
+                max-height: 200px;                
+                overflow: auto;
             }
         }
         
