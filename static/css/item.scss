@@ -115,6 +115,19 @@ body{ background: #f9f9f9}
              margin-left: 10px;
             margin-top: 20px;
             margin-right: 0;
+            position: relative;
+            &:hover{
+                &:after{
+                    content: " ";
+                    position: absolute;
+                    height: 0;
+                    left: 5px;
+                    right:5px;
+                    bottom:3px;
+                     border-bottom: 1px solid #555;
+                }
+               
+            }
         }
     
     }
@@ -223,7 +236,11 @@ body{ background: #f9f9f9}
             p{margin:12px 0}
             em{ font-style: normal; color: #0e6ab4}
             img{ max-width: 717px}
-            
+            .back{float: right;color: #0e6ab4;margin: 2em 0;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
                 
         }
         
