@@ -10,14 +10,14 @@
 <body>
 <div class="head">
     <div class="menu cbox" >
-     
+
         <a href="/Info"  class="cur" >信息披露</a>
         <a href="/Join" >人力资源</a>
-       <a href="/Manufacturing">案例展示</a>     
+       <a href="/Manufacturing">案例展示</a>
        <a href="/News" >新闻中心</a>
        <a href="/About" >关于我们</a>
        <a href="/">首页</a>
-       
+
         <a href="/" class="logo"></a>
         <a href="http://www.neeq.com.cn/nq/listedcompany.html" target="_blank" class="code"></a>
     </div>
@@ -33,10 +33,10 @@
               <a href="/Info?type={$option.id}" id="type_{$option.id}" <eq name="vo[typeIds_article]" value="$option.id">class="cur"</eq> >{$option.title}</a><br />
               </eq>
             </volist>
- 
+
     </div>
      <div class="conzone">
-        
+
         <h3>{$vo.title_article}<em>发布时间：{$vo.updateTime_article|date='Y-m-d H:s:m',###}　　　　点击总数：{$vo.hit_num}</em></h3>
         <div class="text">
             {$vo.content_article}
@@ -47,9 +47,13 @@
    <div class="cbox">
     <a href="/" class="logo"></a>
     <div class="code"></div>
+  <div class="unicom"></div>
+  <div class="greenlive"></div>
+  <div class="goyo"></div>
+  <div class="cabr"></div>
 
     <div class="dropList" id="dropList">
-       
+
        </div>
     <a  id="gobtn" class="gobtn" target="_blank">前往</a>
     <p class="copyright">广东东腾晖信息科技开发股份有限公司 © Copyright 2005 - 2016.</p>
