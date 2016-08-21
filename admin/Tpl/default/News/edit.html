@@ -32,7 +32,9 @@
          
         </ul>
          <div class="clear"></div>
-          <input class="text-input small-input" type="text" name="picturePath" value="{$vo.picturePath}" id="selectImgHide" />
+          <input class="text-input small-input" type="text" name="picturePath" value="{$vo.picturePath}" id="selectImgHide" /> <input type="checkbox" value="1" id="selectImgSize"/> 原图
+          
+          <input type="text" id="ansonDatepicker" value="1980-10-10 14:21">
           <!-- Classes for input-notification: success, error, information, attention -->
           </p>
           
@@ -65,5 +67,23 @@
 		
 		})
         $J('a.selectPic').facebox();
+$J('#ansonDatepicker').ansonDatepicker();
+ 
+$J('#selectImgSize').click(function(){
+    
+  var sval = $J('#selectImgHide').val();
+                
+   if(sval.length < 4) return false;
+    
+    if(this.checked){
+        
+       $J('#selectImgHide').val(sval.replace('s_',''));
+    }else{
+        $J('#selectImgHide').val($J('#selectImgObj').attr('src'));
+    }
+
+
+})
+
 		
 </script>

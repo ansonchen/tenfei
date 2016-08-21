@@ -140,6 +140,8 @@ $J(document).ready(function(){
         </ul>
          <div class="clear"></div>
           <input class="text-input small-input" type="text" name="picturePath" id="selectImgHide" />
+          <input type="checkbox" value="1" id="selectImgSize"/> 原图
+        
           <!-- Classes for input-notification: success, error, information, attention -->
           </p>
            
@@ -181,3 +183,23 @@ $J(document).ready(function(){
 <div id="footer"> <small>
   <!-- Remove this notice or replace it with whatever you want -->
   {$site.copyright_site} |  <a href="#">Top</a> </small> </div>
+
+
+<script>
+ 
+$J('#selectImgSize').click(function(){
+    
+  var sval = $J('#selectImgHide').val();
+                
+   if(sval.length < 4) return false;
+    
+    if(this.checked){
+        
+       $J('#selectImgHide').val(sval.replace('s_',''));
+    }else{
+        $J('#selectImgHide').val($J('#selectImgObj').attr('src'));
+    }
+
+
+})
+</script>
