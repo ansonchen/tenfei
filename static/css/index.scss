@@ -153,6 +153,9 @@ body{ background: #f9f9f9}
             overflow: hidden;
                 img{ width: 563px;
                 height: 353px;}
+                .plyr video{
+                     height: 353px;
+                }
             }
         .textGif{
 
@@ -171,6 +174,31 @@ body{ background: #f9f9f9}
         position: relative;    
         height: 408px;
         
+        .newsScroll{width: 1380px;height: 331px; position: relative;overflow: hidden;
+            .scrollBox{
+                width:2800px;height: 331px; position: absolute;left: 0;top: 0;
+                @include transition(transform 500ms ease-out);
+            }
+        
+        }
+        .leftArr{ 
+            position: absolute;
+            left:-100px;
+            top:121px;
+            width: 44px;
+            height: 89px;
+            display: block;
+            background: url(img/index/left.png) center center;
+        }
+        .rightArr{
+             position: absolute;
+            right:-100px;
+            top:121px;
+            width: 44px;
+            height: 89px;
+            display: block;
+            background: url(img/index/right.png) center center;
+        }
         .more{
             width: 84px;
             height: 34px;

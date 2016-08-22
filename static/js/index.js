@@ -1,3 +1,75 @@
+function media(){
+    plyr.setup({
+        debug: !1,
+            title: "宣传片",
+            //iconUrl: "https://cdn.plyr.io/2.0.4/plyr.svg",
+            tooltips: {controls: !0},
+            captions: {
+                defaultActive: !0
+            },
+        i18n: {
+            restart:            "重播",
+            rewind:             "倒回 {seektime} 秒",
+            play:               "播放",
+            pause:              "暂停",
+            forward:            "向前 {seektime} 秒",
+            buffered:           "缓冲",
+            currentTime:        "当前时间",
+            duration:           "长度",
+            volume:             "音量",
+            toggleMute:         "静音",
+            toggleCaptions:     "字幕",
+            toggleFullscreen:   "全屏切换"
+        }
+    });
+}
+function news(){
+    var d = document;
+	var imgList = d.getElementById('newsBox');
+    var leftArr = d.getElementById('leftArr');
+    var rightArr = d.getElementById('rightArr');
+	var adCls =  function(e, t) {for (var a in t) e.style[a] = t[a]	};
+	var bind = function(e, t, a) {
+					if (e) {
+						t = t.split(" ");
+						for (var n in t) e.addEventListener(t[n], a, !1)
+					}
+			};
+	var st ;
+
+	function bindEve(e){
+
+
+		var obj = e.target;
+
+			if(st) clearTimeout(st);
+
+			st = setTimeout(function(){
+
+
+				var id = parseInt(obj.rel,10);
+				var trf = "translateX(-" +  id*1392   + "px)";
+
+				adCls(imgList, {
+						transform: trf,
+						OTransform: trf,
+						msTransform: trf,
+						MozTransform: trf,
+					  WebkitTransform: trf
+
+				});
+
+			},50)
+
+
+		
+		//console.log(e.target.tagName)
+	}
+	bind(leftArr,"click", bindEve);
+    bind(rightArr,"click", bindEve);
+
+}
+
 function init(){
         
     var d = document;
@@ -6,7 +78,7 @@ function init(){
   
     if(newsBox){
         
-    var html = '<a href="/News" class="more">所有新闻</a>'; 
+    var html = ''; 
      
     for(var i = 0,j = indexdb.length; i<j;i++ ){
         
@@ -21,6 +93,8 @@ function init(){
    html = null;
     
     }
+    
+    
 
     d.getElementById('productys').innerHTML =  indexCon[0].part1_site;
     d.getElementById('J_iconlist').innerHTML =  indexCon[0].part2_site;
@@ -309,9 +383,9 @@ function init(){
     }
     }
 }
-
+media();
 init();
-
+news();
 
 
 

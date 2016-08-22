@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <script src="static/js/quickAddImg.js" type="text/javascript"></script>
 <link rel="stylesheet" href="static/css/index.css">
+<link rel="stylesheet" href="static/plyr/plyr.css">
 </head>
 <body>
 <img src="static/css/img/index/index_bg.jpg" class="hide" alt="">
@@ -26,25 +27,34 @@
     <div class="media nbox">
 
         <img src="static/css/img/index/czf.gif" class="textGif" alt="">
-        <a href="http://www.youku.com" class="mp4" target="_blank"></a>
+        <div class="mp4">
+               <video poster="static/css/img/index/media_bg.jpg" controls crossorigin>
+                    <!-- Video files -->
+                    <source src="static/plyr/media.mp4" type="video/mp4">
+                    <source src="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.webm" type="video/webm">
+                    <!-- Fallback for browsers that don't support the <video> element -->
+                    <a href="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.mp4" download>Download</a>
+                </video>
+        </div>
+<!--        <a href="http://www.youku.com" class="mp4" target="_blank"></a>-->
     </div>
-    <div class="nbox news" id="newsBox">
+    <div class="nbox news">
     <a href="/News" class="more">所有新闻</a>
-    <a href="#"  class="item">
-        <img src="static/css/img/index/new1.jpg" alt="">
-        <em>腾晖科技重大资产重组工作取得实质性进展</em>
-        为充分运用资本运作平台，优化公司产业结构，促进公司发展，腾晖科技自2015年11月因筹划重大资产重组
-    </a>
-    <a href="#"  class="item">
-        <img src="static/css/img/index/new2.jpg" alt="">
-       <em>创新与应用中心项目一期工程开工</em>
-        “腾晖科技创新与应用中心项目”一期工程于2016年1月8日开工。项目位于珠海市高新区科技创新海岸，总
-    </a>
-   <a href="#"  class="item">
-        <img src="static/css/img/index/new3.jpg" alt="">
-        <em>热烈祝贺广东腾晖通过高科技<br/>技术企业重新认定</em>
-        2016年2月29日，广东腾晖信息科技开发股份有限公司顺利通过了高新技术企业重新认定。高新技术企业认定
-    </a>
+       <a href="#" class="leftArr" id="leftArr" rel="0"></a>
+        <a href="#" class="rightArr" id="rightArr" rel="1"></a>
+        <div class="newsScroll">
+           <div class="scrollBox" id="newsBox"></div>
+            
+<!--
+                <a href="#"  class="item">
+                    <img src="static/css/img/index/new1.jpg" alt="">
+                    <em>腾晖科技重大资产重组工作取得实质性进展</em>
+                    为充分运用资本运作平台，优化公司产业结构，促进公司发展，腾晖科技自2015年11月因筹划重大资产重组
+                </a>
+-->
+        </div>
+
+   
     </div>
 
 </div>
@@ -117,6 +127,7 @@
 </div>
 </body>
 <!--<script type="application/javascript" src="static/js/data-include.js"></script>-->
+<script type="text/javascript" src="static/plyr/plyr.js"></script>
 <script type="text/javascript" src="Public/indexDB.js"></script>
 <script type="text/javascript" src="Public/indexCon.js"></script>
 <script type="text/javascript" src="static/js/index.js"></script>
