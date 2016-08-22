@@ -188,6 +188,11 @@ body{ background: #f9f9f9}
             height: 89px;
             display: block;
             background: url(img/index/left.png) center center;
+            opacity: .5;
+            &:hover{
+                opacity: 1
+            }
+                
         }
         .rightArr{
              position: absolute;
@@ -197,6 +202,11 @@ body{ background: #f9f9f9}
             height: 89px;
             display: block;
             background: url(img/index/right.png) center center;
+            opacity: .5;
+            &:hover{
+                opacity: 1
+            }
+            
         }
         .more{
             width: 84px;
