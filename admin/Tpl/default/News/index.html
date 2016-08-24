@@ -70,6 +70,12 @@ $J(document).ready(function(){
           <tr>
             <th>标题</th>
             <th>二级菜单</th>
+             <if condition="$ppid eq 122">
+            <th>首页新闻位置</th>
+             <else/>
+              <th>排序</th>
+              </if>
+              
             <th>更新时间</th>
             <th>操作</th>
           </tr>
@@ -96,6 +102,7 @@ $J(document).ready(function(){
             <tr>
               <td><a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle">{$mTable.title_article}</a></td>
               <td>{$cntype[$mTable['typeIds_article']]}</td>
+              <td>{$mTable.sort}</td>
               <td>{$mTable.updateTime_article|date='Y-m-d',###}</td>
               <td class="iconTools"><!-- Icons -->
                 <a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle editIcon" title="编辑">编辑</a> <a href="__URL__/delete/id_article/{$mTable.id_article}" class="delArticle delIcon" title="删除">删除</a>
