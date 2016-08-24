@@ -1,3 +1,1376 @@
-﻿/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{font-family:"Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif}ul,li{list-style:none;margin:0;padding:0}a{text-decoration:none}::-webkit-input-placeholder{color:#fff}:-moz-placeholder{color:#fff}::-moz-placeholder{color:#fff}:-ms-input-placeholder{color:#fff}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.cbox{width:1380px;margin:0 auto}.nbox{width:1380px;margin:0 auto}body{background:#f9f9f9}.head{height:1149px;min-width:1380px;background:#f9f9f9 url(img/index/index_bg.jpg) no-repeat center top;overflow:hidden;position:relative}.head .menu{height:90px;margin-top:25px}.head .menu a{float:right;line-height:90px;color:#0f6ab4;font-size:15px;min-width:66px;margin-right:60px;white-space:nowrap;text-align:center;letter-spacing:2px}.head .menu a:hover{opacity:.6}.head .menu a.cur{position:relative;cursor:default}.head .menu a.cur:after{position:absolute;width:100%;height:0px;border-top:2px solid #0f6ab4;content:' ';top:60px;left:0px}.head .menu a.cur:hover{opacity:1}.head .menu .logo{margin-left:35px;width:180px;height:90px;display:block;float:left;margin-right:0px}.head .menu .logo:after{border:none}.head .menu.nbox .logo{margin-left:105px}.head .menu .code{width:62px;height:46px;display:block;float:left;margin-left:10px;margin-top:20px;margin-right:0;position:relative}.head .menu .code:hover:after{content:" ";position:absolute;height:0;left:5px;right:5px;bottom:3px;border-bottom:1px solid #555}.head .media{height:580px;overflow:hidden;position:relative}.head .media .mp4{width:630px;height:353px;display:block;position:absolute;background:#000;right:46px;top:130px;overflow:hidden}.head .media .mp4 img{width:563px;height:353px}.head .media .textGif{width:544px;height:74px;display:block;position:absolute;left:128px;top:227px}.head .news{position:relative;height:408px}.head .news .newsScroll{width:1380px;height:331px;position:relative;overflow:hidden}.head .news .newsScroll .scrollBox{width:2800px;height:331px;position:absolute;left:0;top:0;-webkit-transition:-webkit-transform 500ms ease-out;-moz-transition:-moz-transform 500ms ease-out;transition:transform 500ms ease-out}.head .news .leftArr{position:absolute;left:-100px;top:121px;width:44px;height:89px;display:block;background:url(img/index/left.png) center center;opacity:.5}.head .news .leftArr:hover{opacity:1}.head .news .rightArr{position:absolute;right:-100px;top:121px;width:44px;height:89px;display:block;background:url(img/index/right.png) center center;opacity:.5}.head .news .rightArr:hover{opacity:1}.head .news .more{width:84px;height:34px;text-align:center;line-height:34px;font-size:14px;color:#fff;background:#474747;position:absolute;top:360px;right:0px}.head .news .more:hover{opacity:.8}.head .item{width:308px;height:307px;float:left;margin:0 12px 0 0;padding:12px 14px;background:#e7e7e7;color:#565656;font-size:14px;line-height:24px}.head .item img{width:308px;height:166px}.head .item em{font-style:normal;line-height:30px;height:60px;overflow:hidden;margin-bottom:16px;display:block;font-size:18px;color:#444444}.head .item:hover{opacity:.8}.head .item:last-child{margin-right:0}.welcome{height:468px;min-width:1380px;background:url(img/index/index_bg2.jpg) no-repeat center center;overflow:hidden;color:#fff}.welcome h3{text-align:center;font-size:60px;margin:110px 0 60px 0;font-weight:400}.welcome p{font-size:20px;line-height:34px;text-align:center;margin:0}.welcome table{border-collapse:collapse;width:100%;margin-top:128px}.welcome table tr th{text-align:center;width:33%;color:#f19826;font-size:60px;font-weight:400}.welcome table tr td{text-align:center;font-family:Arial;font-size:146px;color:#ffffff;padding-top:10px}.stab{height:352px;margin-top:132px;margin-bottom:108px}.stab .img{width:614px;height:352px;overflow:hidden;float:right}.stab .text{width:572px;height:352px;float:left}.stab .text h3{height:50px;position:relative;top:-8px;margin:0;font-size:30px;color:#196dae}.stab .text .lab{height:40px;line-height:40px;width:inherit;font-size:24px;text-align:center;border-bottom:1px solid #dadada}.stab .text .lab a{width:30%;text-align:center;display:inline-block;color:#a1a1a1}.stab .text .lab a:hover{color:#565656}.stab .text .lab a.cur{color:#565656;position:relative}.stab .text .lab a.cur:after{content:" ";position:absolute;bottom:0;left:15px;right:15px;height:0px;border-bottom:3px solid #999}.stab .text .con{height:262px;overflow:hidden;width:inherit;color:#565656;font-size:20px;line-height:1.7}.stab .text .con .scroll{margin-top:7px}.ltab{margin-bottom:80px}.ltab .text{overflow:hidden}.ltab .text h3{height:50px;position:relative;top:-8px;margin:90px 0 10px 0;font-size:30px;color:#196dae}.ltab .text .lab{height:40px;line-height:40px;width:inherit;font-size:24px;border-bottom:1px solid #dadada;text-align:center;padding-bottom:14px}.ltab .text .lab a{width:30%;text-align:center;display:inline-block;color:#a1a1a1}.ltab .text .lab a.cur{color:#565656;position:relative}.ltab .text .lab a.cur:after{content:" ";position:absolute;bottom:-14px;left:120px;right:120px;height:0px;border-bottom:3px solid #999}.ltab .text .lab a:hover{color:#565656}.ltab .text .lab a:first-child{text-align:right}.ltab .text .lab a:first-child.cur:after{bottom:-14px;left:315px;right:-60px}.ltab .text .lab a:last-child{text-align:left}.ltab .text .lab a:last-child.cur:after{bottom:-14px;right:305px;left:-50px}.ltab .text .con{overflow:hidden;color:#565656;font-size:20px;line-height:1.7;padding:0 129px}.ltab .text .con img{max-width:1380px;width:1121px;height:429px;overflow:hidden;margin:30px auto;display:block}.ltab .text .con p{margin:1em 0}.iconlist{border-top:1px solid #dadada;border-bottom:1px solid #dadada;padding:40px 0;overflow:hidden}.iconlist .detail{height:200px;padding:0 10px;margin:0 71px;border-top:1px solid #dadada;clear:both;color:#565656}.iconlist .detail p{font-size:18px;line-height:1.7;margin:0}.iconlist .detail h3{font-size:24px;line-height:50px;margin:0}.iconlist a{color:#565656;font-size:20px;width:218px;height:278px;float:left;display:block;margin-right:122px;text-align:center}.iconlist a i{background:#dadada url(img/index/icons.png) no-repeat center top;width:218px;height:218px;display:block;overflow:hidden;border-radius:100%;margin:0 auto 10px}.iconlist a.nm{margin-right:0px}.iconlist a:nth-child(1){margin-left:71px}.iconlist a:nth-child(2) i{background-position:center -218px}.iconlist a:nth-child(3) i{background-position:center -436px}.iconlist a:nth-child(4){margin-right:0px}.iconlist a:nth-child(4) i{background-position:center -872px}.iconlist a:nth-child(6){margin-left:71px}.iconlist a:nth-child(6) i{background-position:center -654px}.iconlist a:nth-child(7) i{background-position:center -1090px}.iconlist a:nth-child(8) i{background-position:center -1308px}.iconlist a:nth-child(9){margin-right:0px}.iconlist a:nth-child(9) i{background-position:center -1526px}.iconlist a:hover i,.iconlist a.cur i{background-color:#f19826}ul.circle{list-style-type:disc}.history{height:538px;background:url(img/index/index_history.jpg) no-repeat center center;overflow:hidden;min-width:1380px}.history .cbox{width:1180px;padding-left:60px}.history h3{font-weight:400;color:#f9f9f9;font-size:60px;line-height:70px;margin:80px 0 0 0}.history .time{margin-top:38px;overflow:hidden}.history .time a{display:block;float:left;margin-right:22px;position:relative;width:108px;height:108px;text-align:center;line-height:108px;font-family:Arial;font-size:38px;border-radius:100%;color:#a0823f}.history .time a i{width:100%;height:100%;position:absolute;content:' ';background:#dadada;display:block;border-radius:100%;left:0;top:0;font-style:normal}.history .time a:nth-child(3),.history .time a.b1{width:98px;height:98px;font-size:30px;line-height:98px}.history .time a:nth-child(3) i,.history .time a.b1 i{top:5px}.history .time a:nth-child(2),.history .time a.b2{width:88px;height:88px;font-size:22px;line-height:88px}.history .time a:nth-child(2) i,.history .time a.b2 i{top:9px}.history .time a:nth-child(1),.history .time a:nth-child(5),.history .time a:nth-child(7),.history .time a.b3{width:78px;height:78px;font-size:22px;line-height:78px}.history .time a:nth-child(1) i,.history .time a:nth-child(5) i,.history .time a:nth-child(7) i,.history .time a.b3 i{top:15px}.history .time a:nth-child(6),.history .time a.b4{width:70px;height:70px;font-size:20px;line-height:70px}.history .time a:nth-child(6) i,.history .time a.b4 i{top:19px}.history .time a:nth-child(8),.history .time a.b5{width:67px;height:67px;font-size:20px;line-height:67px}.history .time a:nth-child(8) i,.history .time a.b5 i{top:20px}.history .time a:nth-child(9),.history .time a.b6{width:60px;height:60px;font-size:20px;line-height:60px}.history .time a:nth-child(9) i,.history .time a.b6 i{top:23px}.history .time a:nth-child(10),.history .time a.b7{width:50px;height:50px;font-size:18px;line-height:50px}.history .time a:nth-child(10) i,.history .time a.b7 i{top:28px}.history .time a:hover i,.history .time a.cur i{background:#fff}.history ul{clear:both;list-style-type:disc;padding-left:0px;margin:36px 0 0 0}.history ul li{font-size:20px;list-style-type:none;color:#fff;display:list-item;line-height:34px}.server{text-align:center;overflow:hidden;min-width:1380px}.server .cbox{position:relative}.server h3{color:#196dae;font-size:60px;font-weight:400;line-height:60px;margin:124px 0 0 0;text-align:center}.server h3.contact{color:#565656;margin:85px 0 78px 0}.server p{font-size:20px;color:#565656;line-height:36px}.server .context{width:988px;background:#dadada;padding:18px 40px;font-size:14px;line-height:26px;text-align:left;color:#565656;margin:0 auto;border:1px solid #adadad;position:absolute;bottom:245px;left:150px}.footer{margin-top:30px;position:relative;height:418px;background:#3b3b3b;min-width:1380px;overflow:hidden;font-size:14px}.footer .cbox{position:relative}.footer .logo{position:absolute;top:67px;left:0;display:block;width:312px;height:89px;border-right:1px solid #fff;background:url(img/footerlogo.png) no-repeat left center}.footer .logo:hover{opacity:.6}.footer .code{background:url(img/code2.jpg) no-repeat center center;background-size:300px;width:300px;height:300px;overflow:hidden;position:absolute;right:0;top:39px}.footer .unicom{background:url(img/unicom.png) no-repeat center center;background-size:187px;width:187px;height:100px;overflow:hidden;position:absolute;top:270px;left:0}.footer .greenlive{background:url(img/greenlive.png) no-repeat center center;width:208px;height:100px;overflow:hidden;position:absolute;top:270px;left:240px}.footer .goyo{background:url(img/goyo.png) no-repeat center center;background-size:200px;width:200px;height:100px;overflow:hidden;position:absolute;top:270px;left:440px}.footer .cabr{background:url(img/cabr.png) no-repeat center center;background-size:121px;width:121px;height:121px;overflow:hidden;position:absolute;top:270px;left:660px}.footer .centext{position:absolute;top:67px;left:312px;display:block;width:610px;height:89px;border-right:1px solid #fff;text-align:center;line-height:49px}.footer .centext a{color:#f19826;margin:0 20px;line-height:24px}.footer .centext a:hover{opacity:.5}.footer .dropList{position:absolute;background:#fff url(img/index/arr_bg.jpg) no-repeat 216px 13px;top:76px;z-index:3;left:382px;width:232px;height:32px;border:1px solid #edaf58;line-height:32px;font-size:14px;color:#7b7b7b;overflow:hidden;text-indent:24px}.footer .dropList a{color:#000000;font-size:14px;line-height:24px;display:block;background:#fff;text-indent:24px}.footer .dropList a:hover{background:#cacaca}.footer .dropList:hover{height:auto;max-height:200px;overflow:auto}.footer .gobtn{background:#edaf58;font-size:14px;color:#fff;height:34px;width:56px;display:block;position:absolute;top:76px;left:618px;line-height:34px;text-align:center}.footer .copyright{position:relative;top:130px;left:382px;z-index:1;color:#bfbfbf}.footer .text{width:280px;position:absolute;top:124px;left:495px;color:#bfbfbf;line-height:24px}.footer .text a{color:#bfbfbf;display:block;line-height:24px}.footer .text a:hover{color:#f19826}.footer .text.links{width:100px;left:383px}.footer .text.sec{left:775px}.hide{display:none}.hideo{opacity:0}.zoomIn{-webkit-animation-name:zoomIn;-moz-animation-name:zoomIn;animation-name:zoomIn;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:0s;-moz-animation-delay:0s;animation-delay:0s;-webkit-animation-timing-function:ease;-moz-animation-timing-function:ease;animation-timing-function:ease}@-webkit-keyframes zoomIn{50%{opacity:1}0%{opacity:0;-webkit-transform:scale3d(1, 0, 1)}}@-moz-keyframes zoomIn{50%{opacity:1}0%{opacity:0;-moz-transform:scale3d(1, 0, 1)}}@keyframes zoomIn{50%{opacity:1}0%{opacity:0;-webkit-transform:scale3d(1, 0, 1);-moz-transform:scale3d(1, 0, 1);-ms-transform:scale3d(1, 0, 1);-o-transform:scale3d(1, 0, 1);transform:scale3d(1, 0, 1)}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@-moz-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;-moz-animation-name:fadeOut;animation-name:fadeOut;-webkit-animation-duration:0.5s;-moz-animation-duration:0.5s;animation-duration:0.5s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:0s;-moz-animation-delay:0s;animation-delay:0s;-webkit-animation-timing-function:ease;-moz-animation-timing-function:ease;animation-timing-function:ease}.fadeIn{-webkit-animation-name:fadeIn;-moz-animation-name:fadeIn;animation-name:fadeIn;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:0s;-moz-animation-delay:0s;animation-delay:0s;-webkit-animation-timing-function:ease;-moz-animation-timing-function:ease;animation-timing-function:ease}
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, F:/Git/tenfei/tenfei/static/css/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, F:/Git/tenfei/tenfei/static/css/normalize.css */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, F:/Git/tenfei/tenfei/static/css/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, F:/Git/tenfei/tenfei/static/css/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, F:/Git/tenfei/tenfei/static/css/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, F:/Git/tenfei/tenfei/static/css/normalize.css */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, F:/Git/tenfei/tenfei/static/css/normalize.css */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, F:/Git/tenfei/tenfei/static/css/normalize.css */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, F:/Git/tenfei/tenfei/static/css/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, F:/Git/tenfei/tenfei/static/css/normalize.css */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, F:/Git/tenfei/tenfei/static/css/normalize.css */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, F:/Git/tenfei/tenfei/static/css/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, F:/Git/tenfei/tenfei/static/css/normalize.css */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, F:/Git/tenfei/tenfei/static/css/normalize.css */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, F:/Git/tenfei/tenfei/static/css/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, F:/Git/tenfei/tenfei/static/css/normalize.css */
+sup {
+  top: -0.5em; }
+
+/* line 173, F:/Git/tenfei/tenfei/static/css/normalize.css */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, F:/Git/tenfei/tenfei/static/css/normalize.css */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, F:/Git/tenfei/tenfei/static/css/normalize.css */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, F:/Git/tenfei/tenfei/static/css/normalize.css */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, F:/Git/tenfei/tenfei/static/css/normalize.css */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, F:/Git/tenfei/tenfei/static/css/normalize.css */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, F:/Git/tenfei/tenfei/static/css/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, F:/Git/tenfei/tenfei/static/css/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, F:/Git/tenfei/tenfei/static/css/normalize.css */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, F:/Git/tenfei/tenfei/static/css/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, F:/Git/tenfei/tenfei/static/css/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, F:/Git/tenfei/tenfei/static/css/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, F:/Git/tenfei/tenfei/static/css/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, F:/Git/tenfei/tenfei/static/css/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, F:/Git/tenfei/tenfei/static/css/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, F:/Git/tenfei/tenfei/static/css/normalize.css */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, F:/Git/tenfei/tenfei/static/css/normalize.css */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, F:/Git/tenfei/tenfei/static/css/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, F:/Git/tenfei/tenfei/static/css/normalize.css */
+td,
+th {
+  padding: 0; }
+
+/* line 6, F:/Git/tenfei/tenfei/static/css/index.scss */
+* {
+  font-family: "Microsoft YaHei", "Arial", "Hiragino Sans GB", "宋体", sans-serif; }
+
+/* line 10, F:/Git/tenfei/tenfei/static/css/index.scss */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 13, F:/Git/tenfei/tenfei/static/css/index.scss */
+a {
+  text-decoration: none; }
+
+/* line 15, F:/Git/tenfei/tenfei/static/css/index.scss */
+::-webkit-input-placeholder {
+  color: #fff; }
+
+/* line 19, F:/Git/tenfei/tenfei/static/css/index.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff; }
+
+/* line 23, F:/Git/tenfei/tenfei/static/css/index.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff; }
+
+/* line 27, F:/Git/tenfei/tenfei/static/css/index.scss */
+:-ms-input-placeholder {
+  color: #fff; }
+
+/* line 38, F:/Git/tenfei/tenfei/static/css/index.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* line 45, F:/Git/tenfei/tenfei/static/css/index.scss */
+.cbox {
+  width: 1380px;
+  margin: 0 auto; }
+
+/* line 50, F:/Git/tenfei/tenfei/static/css/index.scss */
+.nbox {
+  width: 1380px;
+  margin: 0 auto; }
+
+/* line 55, F:/Git/tenfei/tenfei/static/css/index.scss */
+body {
+  background: #f9f9f9; }
+
+/* line 56, F:/Git/tenfei/tenfei/static/css/index.scss */
+.head {
+  height: 1149px;
+  min-width: 1380px;
+  background: #f9f9f9 url(img/index/index_bg.jpg) no-repeat center top;
+  overflow: hidden;
+  position: relative; }
+  /* line 62, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .head .menu {
+    height: 90px;
+    margin-top: 25px; }
+    /* line 67, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .menu a {
+      float: right;
+      line-height: 90px;
+      color: #0f6ab4;
+      font-size: 15px;
+      min-width: 66px;
+      margin-right: 60px;
+      white-space: nowrap;
+      text-align: center;
+      letter-spacing: 2px; }
+      /* line 77, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .menu a:hover {
+        opacity: .6; }
+      /* line 80, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .menu a.cur {
+        position: relative;
+        cursor: default; }
+        /* line 83, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .head .menu a.cur:after {
+          position: absolute;
+          width: 100%;
+          height: 0px;
+          border-top: 2px solid #0f6ab4;
+          content: ' ';
+          top: 60px;
+          left: 0px; }
+        /* line 93, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .head .menu a.cur:hover {
+          opacity: 1; }
+    /* line 99, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .menu .logo {
+      margin-left: 35px;
+      width: 180px;
+      height: 90px;
+      display: block;
+      float: left;
+      margin-right: 0px; }
+      /* line 106, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .menu .logo:after {
+        border: none; }
+    /* line 111, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .menu.nbox .logo {
+      margin-left: 105px; }
+    /* line 115, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .menu .code {
+      width: 62px;
+      height: 46px;
+      display: block;
+      float: left;
+      margin-left: 10px;
+      margin-top: 20px;
+      margin-right: 0;
+      position: relative; }
+      /* line 126, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .menu .code:hover:after {
+        content: " ";
+        position: absolute;
+        height: 0;
+        left: 5px;
+        right: 5px;
+        bottom: 3px;
+        border-bottom: 1px solid #555; }
+  /* line 140, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .head .media {
+    height: 580px;
+    overflow: hidden;
+    position: relative; }
+    /* line 145, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .media .mp4 {
+      width: 630px;
+      height: 353px;
+      display: block;
+      position: absolute;
+      background: #000;
+      right: 46px;
+      top: 130px;
+      overflow: hidden; }
+      /* line 155, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .media .mp4 img {
+        width: 563px;
+        height: 353px; }
+    /* line 159, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .media .textGif {
+      width: 544px;
+      height: 74px;
+      display: block;
+      position: absolute;
+      left: 128px;
+      top: 227px; }
+  /* line 172, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .head .news {
+    position: relative;
+    height: 408px; }
+    /* line 176, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .news .newsScroll {
+      width: 1380px;
+      height: 331px;
+      position: relative;
+      overflow: hidden; }
+      /* line 177, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .news .newsScroll .scrollBox {
+        width: 2800px;
+        height: 331px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-transition: -webkit-transform 500ms ease-out;
+        -moz-transition: -moz-transform 500ms ease-out;
+        transition: transform 500ms ease-out; }
+    /* line 183, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .news .leftArr {
+      position: absolute;
+      left: -100px;
+      top: 121px;
+      width: 44px;
+      height: 89px;
+      display: block;
+      background: url(img/index/left.png) center center;
+      opacity: .5; }
+      /* line 192, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .news .leftArr:hover {
+        opacity: 1; }
+    /* line 197, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .news .rightArr {
+      position: absolute;
+      right: -100px;
+      top: 121px;
+      width: 44px;
+      height: 89px;
+      display: block;
+      background: url(img/index/right.png) center center;
+      opacity: .5; }
+      /* line 206, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .news .rightArr:hover {
+        opacity: 1; }
+    /* line 211, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .news .more {
+      width: 84px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px;
+      font-size: 14px;
+      color: #fff;
+      background: #474747;
+      position: absolute;
+      top: 360px;
+      right: 0px; }
+      /* line 222, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .head .news .more:hover {
+        opacity: .8; }
+  /* line 229, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .head .item {
+    width: 308px;
+    height: 307px;
+    float: left;
+    margin: 0 12px 0 0;
+    padding: 12px 14px;
+    background: #e7e7e7;
+    color: #565656;
+    font-size: 14px;
+    line-height: 24px; }
+    /* line 240, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .item img {
+      width: 308px;
+      height: 166px; }
+    /* line 241, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .item em {
+      font-style: normal;
+      line-height: 30px;
+      height: 60px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      display: block;
+      font-size: 18px;
+      color: #444444; }
+    /* line 243, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .item:hover {
+      opacity: .8; }
+    /* line 247, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .head .item:last-child {
+      margin-right: 0; }
+
+/* line 259, F:/Git/tenfei/tenfei/static/css/index.scss */
+.welcome {
+  height: 468px;
+  min-width: 1380px;
+  background: url(img/index/index_bg2.jpg) no-repeat center center;
+  overflow: hidden;
+  color: #fff; }
+  /* line 265, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .welcome h3 {
+    text-align: center;
+    font-size: 60px;
+    margin: 110px 0 60px 0;
+    font-weight: 400; }
+  /* line 270, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .welcome p {
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0; }
+  /* line 276, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .welcome table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 128px; }
+    /* line 281, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .welcome table tr th {
+      text-align: center;
+      width: 33%;
+      color: #f19826;
+      font-size: 60px;
+      font-weight: 400; }
+    /* line 282, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .welcome table tr td {
+      text-align: center;
+      font-family: Arial;
+      font-size: 146px;
+      color: #ffffff;
+      padding-top: 10px; }
+
+/* line 292, F:/Git/tenfei/tenfei/static/css/index.scss */
+.stab {
+  height: 352px;
+  margin-top: 132px;
+  margin-bottom: 108px; }
+  /* line 297, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .stab .img {
+    width: 614px;
+    height: 352px;
+    overflow: hidden;
+    float: right; }
+  /* line 303, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .stab .text {
+    width: 572px;
+    height: 352px;
+    float: left; }
+    /* line 307, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .stab .text h3 {
+      height: 50px;
+      position: relative;
+      top: -8px;
+      margin: 0;
+      font-size: 30px;
+      color: #196dae; }
+    /* line 316, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .stab .text .lab {
+      height: 40px;
+      line-height: 40px;
+      width: inherit;
+      font-size: 24px;
+      text-align: center;
+      border-bottom: 1px solid #dadada; }
+      /* line 323, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .stab .text .lab a {
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        color: #a1a1a1; }
+        /* line 328, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .stab .text .lab a:hover {
+          color: #565656; }
+        /* line 331, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .stab .text .lab a.cur {
+          color: #565656;
+          position: relative; }
+          /* line 334, F:/Git/tenfei/tenfei/static/css/index.scss */
+          .stab .text .lab a.cur:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 15px;
+            height: 0px;
+            border-bottom: 3px solid #999; }
+    /* line 346, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .stab .text .con {
+      height: 262px;
+      overflow: hidden;
+      width: inherit;
+      color: #565656;
+      font-size: 20px;
+      line-height: 1.7; }
+      /* line 353, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .stab .text .con .scroll {
+        margin-top: 7px; }
+
+/* line 364, F:/Git/tenfei/tenfei/static/css/index.scss */
+.ltab {
+  margin-bottom: 80px; }
+  /* line 368, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .ltab .text {
+    overflow: hidden; }
+    /* line 371, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text h3 {
+      height: 50px;
+      position: relative;
+      top: -8px;
+      margin: 90px 0 10px 0;
+      font-size: 30px;
+      color: #196dae; }
+    /* line 380, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text .lab {
+      height: 40px;
+      line-height: 40px;
+      width: inherit;
+      font-size: 24px;
+      border-bottom: 1px solid #dadada;
+      text-align: center;
+      padding-bottom: 14px; }
+      /* line 388, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .lab a {
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        color: #a1a1a1; }
+        /* line 393, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .ltab .text .lab a.cur {
+          color: #565656;
+          position: relative; }
+          /* line 396, F:/Git/tenfei/tenfei/static/css/index.scss */
+          .ltab .text .lab a.cur:after {
+            content: " ";
+            position: absolute;
+            bottom: -14px;
+            left: 120px;
+            right: 120px;
+            height: 0px;
+            border-bottom: 3px solid #999; }
+        /* line 406, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .ltab .text .lab a:hover {
+          color: #565656; }
+        /* line 409, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .ltab .text .lab a:first-child {
+          text-align: right; }
+          /* line 411, F:/Git/tenfei/tenfei/static/css/index.scss */
+          .ltab .text .lab a:first-child.cur:after {
+            bottom: -14px;
+            left: 315px;
+            right: -60px; }
+        /* line 417, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .ltab .text .lab a:last-child {
+          text-align: left; }
+          /* line 419, F:/Git/tenfei/tenfei/static/css/index.scss */
+          .ltab .text .lab a:last-child.cur:after {
+            bottom: -14px;
+            right: 305px;
+            left: -50px; }
+    /* line 427, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .ltab .text .con {
+      overflow: hidden;
+      color: #565656;
+      font-size: 20px;
+      line-height: 1.7;
+      padding: 0 129px; }
+      /* line 428, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .con img {
+        max-width: 1380px;
+        width: 1121px;
+        height: 429px;
+        overflow: hidden;
+        margin: 30px auto;
+        display: block; }
+      /* line 434, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .ltab .text .con p {
+        margin: 1em 0; }
+
+/* line 441, F:/Git/tenfei/tenfei/static/css/index.scss */
+.iconlist {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 40px 0;
+  overflow: hidden; }
+  /* line 446, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .iconlist .detail {
+    height: 200px;
+    padding: 0 10px;
+    margin: 0 71px;
+    border-top: 1px solid #dadada;
+    clear: both;
+    color: #565656; }
+    /* line 454, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist .detail p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 0; }
+    /* line 459, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist .detail h3 {
+      font-size: 24px;
+      line-height: 50px;
+      margin: 0; }
+  /* line 467, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .iconlist a {
+    color: #565656;
+    font-size: 20px;
+    width: 218px;
+    height: 278px;
+    float: left;
+    display: block;
+    margin-right: 122px;
+    text-align: center; }
+    /* line 476, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a i {
+      background: #dadada url(img/index/icons.png) no-repeat center top;
+      width: 218px;
+      height: 218px;
+      display: block;
+      overflow: hidden;
+      border-radius: 100%;
+      margin: 0 auto 10px; }
+    /* line 485, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a.nm {
+      margin-right: 0px; }
+    /* line 488, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(1) {
+      margin-left: 71px; }
+    /* line 489, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(2) i {
+      background-position: center -218px; }
+    /* line 490, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(3) i {
+      background-position: center -436px; }
+    /* line 491, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(4) {
+      margin-right: 0px; }
+      /* line 493, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .iconlist a:nth-child(4) i {
+        background-position: center -872px; }
+    /* line 496, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(6) {
+      margin-left: 71px; }
+      /* line 498, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .iconlist a:nth-child(6) i {
+        background-position: center -654px; }
+    /* line 500, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(7) i {
+      background-position: center -1090px; }
+    /* line 501, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(8) i {
+      background-position: center -1308px; }
+    /* line 502, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:nth-child(9) {
+      margin-right: 0px; }
+      /* line 504, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .iconlist a:nth-child(9) i {
+        background-position: center -1526px; }
+    /* line 507, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .iconlist a:hover i, .iconlist a.cur i {
+      background-color: #f19826; }
+
+/* line 511, F:/Git/tenfei/tenfei/static/css/index.scss */
+ul.circle {
+  list-style-type: disc; }
+
+/* line 512, F:/Git/tenfei/tenfei/static/css/index.scss */
+.history {
+  height: 538px;
+  background: url(img/index/index_history.jpg) no-repeat center center;
+  overflow: hidden;
+  min-width: 1380px; }
+  /* line 514, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .history .cbox {
+    width: 1180px;
+    padding-left: 60px; }
+  /* line 519, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .history h3 {
+    font-weight: 400;
+    color: #f9f9f9;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 80px 0 0 0; }
+  /* line 527, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .history .time {
+    margin-top: 38px;
+    overflow: hidden; }
+    /* line 530, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .history .time a {
+      display: block;
+      float: left;
+      margin-right: 22px;
+      position: relative;
+      width: 108px;
+      height: 108px;
+      text-align: center;
+      line-height: 108px;
+      font-family: Arial;
+      font-size: 38px;
+      border-radius: 100%;
+      color: #a0823f; }
+      /* line 545, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a i {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: ' ';
+        background: #dadada;
+        display: block;
+        border-radius: 100%;
+        left: 0;
+        top: 0;
+        font-style: normal; }
+      /* line 558, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(3), .history .time a.b1 {
+        width: 98px;
+        height: 98px;
+        font-size: 30px;
+        line-height: 98px; }
+        /* line 563, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(3) i, .history .time a.b1 i {
+          top: 5px; }
+      /* line 569, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(2), .history .time a.b2 {
+        width: 88px;
+        height: 88px;
+        font-size: 22px;
+        line-height: 88px; }
+        /* line 574, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(2) i, .history .time a.b2 i {
+          top: 9px; }
+      /* line 579, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(1), .history .time a:nth-child(5), .history .time a:nth-child(7), .history .time a.b3 {
+        width: 78px;
+        height: 78px;
+        font-size: 22px;
+        line-height: 78px; }
+        /* line 584, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(1) i, .history .time a:nth-child(5) i, .history .time a:nth-child(7) i, .history .time a.b3 i {
+          top: 15px; }
+      /* line 590, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(6), .history .time a.b4 {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        line-height: 70px; }
+        /* line 595, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(6) i, .history .time a.b4 i {
+          top: 19px; }
+      /* line 600, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(8), .history .time a.b5 {
+        width: 67px;
+        height: 67px;
+        font-size: 20px;
+        line-height: 67px; }
+        /* line 605, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(8) i, .history .time a.b5 i {
+          top: 20px; }
+      /* line 609, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(9), .history .time a.b6 {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px; }
+        /* line 614, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(9) i, .history .time a.b6 i {
+          top: 23px; }
+      /* line 618, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:nth-child(10), .history .time a.b7 {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 50px; }
+        /* line 623, F:/Git/tenfei/tenfei/static/css/index.scss */
+        .history .time a:nth-child(10) i, .history .time a.b7 i {
+          top: 28px; }
+      /* line 628, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .history .time a:hover i, .history .time a.cur i {
+        background: #fff; }
+  /* line 634, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .history ul {
+    clear: both;
+    list-style-type: disc;
+    padding-left: 0px;
+    margin: 36px 0 0 0; }
+    /* line 639, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .history ul li {
+      font-size: 20px;
+      list-style-type: none;
+      color: #fff;
+      display: list-item;
+      line-height: 34px; }
+
+/* line 651, F:/Git/tenfei/tenfei/static/css/index.scss */
+.server {
+  text-align: center;
+  overflow: hidden;
+  min-width: 1380px; }
+  /* line 655, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .server .cbox {
+    position: relative; }
+  /* line 656, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .server h3 {
+    color: #196dae;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 124px 0 0 0;
+    text-align: center; }
+    /* line 662, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .server h3.contact {
+      color: #565656;
+      margin: 85px 0 78px 0; }
+  /* line 670, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .server p {
+    font-size: 20px;
+    color: #565656;
+    line-height: 36px; }
+  /* line 675, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .server .context {
+    width: 988px;
+    background: #dadada;
+    padding: 18px 40px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    color: #565656;
+    margin: 0 auto;
+    border: 1px solid #adadad;
+    position: absolute;
+    bottom: 245px;
+    left: 150px; }
+
+/* line 695, F:/Git/tenfei/tenfei/static/css/index.scss */
+.footer {
+  margin-top: 30px;
+  position: relative;
+  height: 418px;
+  background: #3b3b3b;
+  min-width: 1380px;
+  overflow: hidden;
+  font-size: 14px; }
+  /* line 703, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .cbox {
+    position: relative; }
+  /* line 704, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .logo {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: block;
+    width: 312px;
+    height: 89px;
+    border-right: 1px solid #fff;
+    background: url(img/footerlogo.png) no-repeat left center; }
+    /* line 713, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .logo:hover {
+      opacity: .6; }
+  /* line 718, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .code {
+    background: url(img/code2.jpg) no-repeat center center;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 76px; }
+  /* line 727, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .unicom {
+    background: url(img/unicom.png) no-repeat center center;
+    background-size: 187px;
+    width: 187px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 270px;
+    left: 0; }
+  /* line 737, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .greenlive {
+    background: url(img/greenlive.png) no-repeat center center;
+    width: 208px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 270px;
+    left: 240px; }
+  /* line 746, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .goyo {
+    background: url(img/goyo.png) no-repeat center center;
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 270px;
+    left: 440px; }
+  /* line 756, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .cabr {
+    background: url(img/cabr.png) no-repeat center center;
+    background-size: 121px;
+    width: 121px;
+    height: 121px;
+    overflow: hidden;
+    position: absolute;
+    top: 270px;
+    left: 660px; }
+  /* line 766, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .centext {
+    position: absolute;
+    top: 67px;
+    left: 312px;
+    display: block;
+    width: 610px;
+    height: 89px;
+    border-right: 1px solid #fff;
+    text-align: center;
+    line-height: 49px; }
+    /* line 777, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .centext a {
+      color: #f19826;
+      margin: 0 20px;
+      line-height: 24px; }
+      /* line 781, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .footer .centext a:hover {
+        opacity: .5; }
+  /* line 788, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .dropList {
+    position: absolute;
+    background: #fff url(img/index/arr_bg.jpg) no-repeat 216px 13px;
+    top: 76px;
+    z-index: 3;
+    left: 382px;
+    width: 232px;
+    height: 32px;
+    border: 1px solid #edaf58;
+    line-height: 32px;
+    font-size: 14px;
+    color: #7b7b7b;
+    overflow: hidden;
+    text-indent: 24px; }
+    /* line 794, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .dropList a {
+      color: #000000;
+      font-size: 14px;
+      line-height: 24px;
+      display: block;
+      background: #fff;
+      text-indent: 24px; }
+      /* line 797, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .footer .dropList a:hover {
+        background: #cacaca; }
+    /* line 799, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .dropList:hover {
+      height: auto;
+      max-height: 200px;
+      overflow: auto; }
+  /* line 806, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .gobtn {
+    background: #edaf58;
+    font-size: 14px;
+    color: #fff;
+    height: 34px;
+    width: 56px;
+    display: block;
+    position: absolute;
+    top: 76px;
+    left: 618px;
+    line-height: 34px;
+    text-align: center; }
+  /* line 807, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .copyright {
+    position: relative;
+    top: 130px;
+    left: 382px;
+    z-index: 1;
+    color: #bfbfbf; }
+  /* line 814, F:/Git/tenfei/tenfei/static/css/index.scss */
+  .footer .text {
+    width: 280px;
+    position: absolute;
+    top: 124px;
+    left: 495px;
+    color: #bfbfbf;
+    line-height: 24px; }
+    /* line 821, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .text a {
+      color: #bfbfbf;
+      display: block;
+      line-height: 24px; }
+      /* line 825, F:/Git/tenfei/tenfei/static/css/index.scss */
+      .footer .text a:hover {
+        color: #f19826; }
+    /* line 829, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .text.links {
+      width: 100px;
+      left: 383px; }
+    /* line 833, F:/Git/tenfei/tenfei/static/css/index.scss */
+    .footer .text.sec {
+      left: 775px; }
+
+/* line 840, F:/Git/tenfei/tenfei/static/css/index.scss */
+.hide {
+  display: none; }
+
+/* line 841, F:/Git/tenfei/tenfei/static/css/index.scss */
+.hideo {
+  opacity: 0; }
+
+/* line 843, F:/Git/tenfei/tenfei/static/css/index.scss */
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  -moz-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
+
+@-webkit-keyframes zoomIn {
+  50% {
+    opacity: 1; }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 0, 1); } }
+
+@-moz-keyframes zoomIn {
+  50% {
+    opacity: 1; }
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(1, 0, 1); } }
+
+@keyframes zoomIn {
+  50% {
+    opacity: 1; }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 0, 1);
+    -moz-transform: scale3d(1, 0, 1);
+    -ms-transform: scale3d(1, 0, 1);
+    -o-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* line 877, F:/Git/tenfei/tenfei/static/css/index.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
+
+/* line 882, F:/Git/tenfei/tenfei/static/css/index.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease; }
 
 /*# sourceMappingURL=index.css.map */
