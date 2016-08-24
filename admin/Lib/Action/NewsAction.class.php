@@ -18,12 +18,18 @@ class NewsAction extends CommonAction {
 		$Tlist=$Type->order('sort desc')->select();		
 		$this->assign('otype',$Tlist);
 		
-           $newType = array();        
+         $newType = array();        
         foreach ($Tlist as $key => $value)
         {        
             $newType[$value['id']] = $value['title'];
         }
-    $this->assign('cntype',$newType);
+        $this->assign('cntype',$newType);
+         
+         $newsort = array();
+         for($i = 1; $i < 9;$i++){
+             array_push($newsort,$i);
+         }
+          $this->assign('newsort',$newsort);
         
     }
     
@@ -81,6 +87,7 @@ $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
         $this->assign( "ppid", $pid );
 			
 		//$Mlist = $Node->order('sort_node asc')->select(); 
+        $this->assign('today',date('Y-m-d',time()));
 		
 		$this->assign('article',$Mlist);
 
@@ -173,6 +180,8 @@ $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
 	//更新文章
 	public function updateArticle(){
 		if(!empty($_POST['id_article'])) {
+            
+            $_POST['updateTime_article'] = strtotime($_POST['updateTime_article']);
 		
 			$Article	=	D("Article");
 			if($vo = $Article->create()) {
@@ -197,6 +206,7 @@ $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
 	public function addArticle() {
 	
 		$Article    =    D("Article"); 
+         $_POST['updateTime_article'] = strtotime($_POST['updateTime_article']);
         if($vo = $Article->create()) { 
             if(false!==$Article->add()){ 
                 $vo['id_article']     =    nl2br($vo['id_article']);

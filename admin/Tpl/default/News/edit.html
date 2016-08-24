@@ -34,16 +34,38 @@
          <div class="clear"></div>
           <input class="text-input small-input" type="text" name="picturePath" value="{$vo.picturePath}" id="selectImgHide" /> <input type="checkbox" value="1" id="selectImgSize"/> 原图
           
-<!--          <input type="text" id="ansonDatepicker" value="1980-10-10 14:21">-->
-          <!-- Classes for input-notification: success, error, information, attention -->
           </p>
           
-</if>
-   <p>
+
+       <p>
+
+           <label>首页新闻位置</label>
+          <select name="sort">   
+            <option value="100" >不显示在首页</option>       
+            <volist name='newsort' id='option' >                
+              <option value="{$option}"
+               <eq name="option" value="$vo['sort']">selected="selected"</eq>
+              >{$option}</option>
+     
+            </volist>
+          </select>
+
+          </p>
+          </if>
+           <if condition="$vo.menu_pid neq 122">
+           <p>
           <label>排序</label>
           <input class="text-input small-input" type="text" name="sort" value="{$vo.sort}"/>
 
           </p>
+</if>
+          <p>
+          <label>发布时间</label>
+          <input class="text-input small-input" id="ansonDatepicker" type="text" name="updateTime_article" value="{$vo.updateTime_article|date='Y-m-d',###}"/>
+
+          </p>
+
+          
           <p>
     <label>内容</label>
     <html:editor type="fckeditor" id="content_article2" width="98.5%" height="500px" name="content_article"  content="{$vo.content_article}"/>

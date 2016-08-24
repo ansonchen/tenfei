@@ -12,7 +12,7 @@ class ArticleModel extends Model {
 
 	public $_auto		=	array(
 		array('time_article','time',self::MODEL_INSERT,'function'),
-		array('updateTime_article','time',3,'function'),
+		//array('updateTime_article','time',3,'function'),
 		);
 
 }

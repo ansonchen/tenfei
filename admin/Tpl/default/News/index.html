@@ -96,7 +96,7 @@ $J(document).ready(function(){
             <tr>
               <td><a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle">{$mTable.title_article}</a></td>
               <td>{$cntype[$mTable['typeIds_article']]}</td>
-              <td>{$mTable.updateTime_article|date='Y-m-d H:i:s',###}</td>
+              <td>{$mTable.updateTime_article|date='Y-m-d',###}</td>
               <td class="iconTools"><!-- Icons -->
                 <a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle editIcon" title="编辑">编辑</a> <a href="__URL__/delete/id_article/{$mTable.id_article}" class="delArticle delIcon" title="删除">删除</a>
                 <!--<a href="#" title="Edit Meta"><img src="__PUBLIC__/admin/resources/images/icons/hammer_screwdriver.png" alt="Edit Meta" /></a>	-->              </td>
@@ -145,11 +145,31 @@ $J(document).ready(function(){
           <!-- Classes for input-notification: success, error, information, attention -->
           </p>
            
-            </if>
+            
          
            <p>
+          <label>首页新闻位置</label>
+          <select name="sort">   
+            <option value="100" >不显示在首页</option>       
+            <volist name='newsort' id='option' >
+                
+              <option value="{$option}" >{$option}</option>
+     
+            </volist>
+          </select>
+
+          </p>
+          </if>
+         <if condition="$ppid neq 122">
+           <p>
           <label>排序</label>
-          <input class="text-input small-input" type="text" name="sort" value="100" />
+          <input class="text-input small-input" type="text" name="sort" value="100"/>
+
+          </p>
+</if>
+          <p>
+          <label>发布时间</label>
+          <input class="text-input small-input" id="ansonDatepicker" type="text" name="updateTime_article" value="{$today}"/>
 
           </p>
         <p>
@@ -186,6 +206,7 @@ $J(document).ready(function(){
 
 
 <script>
+    $J('#ansonDatepicker').ansonDatepicker();
  
 $J('#selectImgSize').click(function(){
     
