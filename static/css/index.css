@@ -1093,7 +1093,8 @@ ul.circle {
   font-size: 14px; }
   /* line 703, F:/Git/tenfei/tenfei/static/css/index.scss */
   .footer .cbox {
-    position: relative; }
+    position: relative;
+    width: 1237px; }
   /* line 704, F:/Git/tenfei/tenfei/static/css/index.scss */
   .footer .logo {
     position: absolute;
@@ -1115,7 +1116,7 @@ ul.circle {
     height: 300px;
     overflow: hidden;
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 76px; }
   /* line 727, F:/Git/tenfei/tenfei/static/css/index.scss */
   .footer .unicom {

@@ -700,7 +700,7 @@ ul.circle {list-style-type:disc}
     min-width: $Cwidth;
     overflow: hidden;
      font-size: 14px;
-     .cbox{position: relative;}
+     .cbox{position: relative; width: 1237px}
     .logo{
         position: absolute;
         top:67px;
@@ -720,7 +720,7 @@ ul.circle {list-style-type:disc}
         width: 300px;height: 300px;
         overflow: hidden;
         position: absolute;
-        right: 0;
+        right: 0px;
         top:76px;
     }
     
