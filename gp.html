@@ -1,0 +1,49 @@
+﻿<html>
+<head>
+<title>斐波那契数列</title>
+<style>
+*{font-size:20px;line-height:1.6;margin:0;padding:0}
+#outPrint{
+margin:20px;
+}
+.main{margin:20px}
+</style>
+</head>
+<body>
+<div class="main">
+<input type="text" id="input_price" />
+
+<button id="btn">确定</button>
+
+<div id="outPrint" ></div>
+</div>
+</body>
+
+<script>
+var price = document.getElementById('input_price');
+var btn = document.getElementById('btn');
+var outPrint = document.getElementById('outPrint');
+
+btn.onclick = function(){
+
+var html ='<h2>可能上升的价位</h2>';
+html += (Number(price.value) * (1+0.191)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+0.236)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+0.382)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+0.50)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+0.618)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+0.809)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1+1)).toFixed(2) + '</br>';
+html +='<h2>可能下跌的价位</h2>';
+html += (Number(price.value) * (1-0.191)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1-0.236)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1-0.382)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1-0.50)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1-0.618)).toFixed(2) + '</br>';
+html += (Number(price.value) * (1-0.809)).toFixed(2) + '</br>';
+
+outPrint.innerHTML=html;
+}
+
+</script>
+</html>
