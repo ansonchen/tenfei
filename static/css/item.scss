@@ -24,7 +24,7 @@ a{ text-decoration: none;}
   color: #fff;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
   color: #fff;
 }
 @mixin anInit($anname,$andu:1s,$delay:0s,$timefn:ease,$anfill:both){
@@ -33,7 +33,7 @@ a{ text-decoration: none;}
     @include animation-fill-mode($anfill);
     @include animation-delay($delay);
     @include animation-timing-function($timefn);
-    
+
 }
 .animated {
   -webkit-animation-duration: 1s;
@@ -45,7 +45,7 @@ a{ text-decoration: none;}
 .cbox{
 	width: $Cwidth;
 	margin: 0 auto;
-    
+
 }
 body{ background: #f9f9f9}
 .head{
@@ -56,8 +56,8 @@ body{ background: #f9f9f9}
        .menu{
         height: 90px;
         margin-top: 25px;
-       
-        
+
+
         a{
             float: right;
             line-height: 90px;
@@ -88,7 +88,7 @@ body{ background: #f9f9f9}
                 opacity: 1
                 }
             }
-            
+
         }
         .logo{
             margin-left: 35px;
@@ -99,15 +99,15 @@ body{ background: #f9f9f9}
              margin-right: 0px;
              &:after{
                  border: none;
-                 
+
              }
         }
         &.nbox .logo,&.cbox .logo{
             margin-left: 105px;
-            
+
         }
         .code{
-            
+
             width: 62px;
             height: 46px;
             display: block;
@@ -126,14 +126,14 @@ body{ background: #f9f9f9}
                     bottom:3px;
                      border-bottom: 1px solid #555;
                 }
-               
+
             }
         }
-    
-    }
-    
 
-    
+    }
+
+
+
     h2{
         clear: both;
         color: #f9f9f9;
@@ -153,7 +153,7 @@ body{ background: #f9f9f9}
         margin-top: -183px;
         margin-bottom: 87px;
     overflow: hidden;
-   
+
     .mb{
         height: 45px;
         overflow: hidden;
@@ -162,12 +162,12 @@ body{ background: #f9f9f9}
          color: #0e6ab4;
             font-size: 14px;
         a{
-           
+
              color: #0e6ab4;
-       
+
         }
-        
-    }    
+
+    }
     .leftnav{
         width:271px;
         float: left;
@@ -177,16 +177,16 @@ body{ background: #f9f9f9}
         a{
             color: #0e6ab4;
             border-left: 2px solid transparent ;
-            padding: 0 22px; 
+            padding: 0 22px;
             margin-bottom: 25px;
             display: inline-block;
-            
+
             &.cur{
                 border-color: #f19826;
                 cursor: default;
             }
-            
-            
+
+
         }
     }
     .conzone{
@@ -210,7 +210,7 @@ body{ background: #f9f9f9}
             bottom: 60px;
 
             }
-            
+
         }
         h3{
             color: #444;
@@ -221,7 +221,7 @@ body{ background: #f9f9f9}
             border-bottom: 1px solid #bfbfbf;
             margin: 0;
             em{
-                
+
                 font-size: 14px;
                 color: #bfbfbf;
                 font-style: normal;
@@ -233,7 +233,9 @@ body{ background: #f9f9f9}
             color: #565656;
             line-height: 24px;
             font-size:14px;
-            p{margin:12px 0}
+            p{margin:12px 0;
+            text-align: justify;
+            }
             em{ font-style: normal; color: #0e6ab4}
             img{ max-width: 717px}
             .back{float: right;color: #0e6ab4;margin: 2em 0;
@@ -241,38 +243,38 @@ body{ background: #f9f9f9}
                     text-decoration: underline
                 }
             }
-                
+
         }
-        
+
         ul.list{
-            
+
             li{ display: block;
                 height: 48px;
                 line-height: 48px;
                 overflow: hidden;
                 border-bottom: 1px dashed #bfbfbf;
                 font-size: 14px;
-                
+
                 a{
                     color: #444444;
                     display: block;
                     em{
-                        
+
                         font-style: normal;
                         color: #bfbfbf;
                         float: right;
                     }
                     &:hover{
-                        
+
                         opacity: .6
                     }
-                
-                
+
+
                 }
             }
-            
+
         }
-        
+
     .page{ clear: both; margin: 40px 0; text-align: right;color: #fff;
             a{ border: 1px solid #c2c2c2; padding: 3px 6px; color: #ccc;
                 &.current{ cursor: default; text-decoration: underline;border-color:#666; color: #333}
@@ -307,7 +309,7 @@ body{ background: #f9f9f9}
             opacity: .6
         }
     }
-    
+
     .code{ background: url(img/code2.jpg) no-repeat center center;
         background-size: 300px;
         width: 300px;height: 300px;
@@ -316,7 +318,7 @@ body{ background: #f9f9f9}
         right: 0;
         top:76px;
     }
-    
+
     .unicom{
 
         background: url(img/unicom.png) no-repeat center center;
@@ -366,7 +368,7 @@ body{ background: #f9f9f9}
         border-right:1px solid #fff;
         text-align: center;
         line-height: 49px;
-        
+
         a{
             color: #f19826;
             margin: 0 20px;
@@ -374,28 +376,28 @@ body{ background: #f9f9f9}
             &:hover{
                 opacity: .5;
             }
-        } 
-        
-        
+        }
+
+
     }
-    .dropList{ 
+    .dropList{
         position: absolute;
         background: #fff url(img/index/arr_bg.jpg) no-repeat  216px 13px;
         top:76px;
         z-index: 3;
         left:382px;width: 232px;height: 32px;border: 1px solid #edaf58; line-height: 32px; font-size: 14px;color: #7b7b7b; overflow: hidden;text-indent: 24px;
             a{
-                
+
                color: #000000; font-size: 14px; line-height: 24px;display:block;background: #fff; text-indent: 24px;
                 &:hover{ background: #cacaca }
             }
             &:hover{
                 height: auto;
-                max-height: 200px;                
+                max-height: 200px;
                 overflow: auto;
             }
         }
-        
+
         .gobtn{background: #edaf58; font-size: 14px; color: #fff;height: 34px;width: 56px;display: block;position: absolute;top:76px; left: 618px;line-height: 34px; text-align: center;}
     .copyright{
         position: relative;
@@ -427,7 +429,7 @@ body{ background: #f9f9f9}
             left: 775px;
         }
     }
-    
+
 }
 
 .hide{ display: none}
