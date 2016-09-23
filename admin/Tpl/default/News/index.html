@@ -6,30 +6,38 @@ $J(document).ready(function(){
 		//添加文章
 		$J('#addArticleBtn').click(function(){
 		saveEditor();//把FCK的内容保存到textarea
-		
+
 			ThinkAjax.sendForm('formArticle','__URL__/addArticle/',completeN,'result');
 		})
-		
+
 
          $J('#buildJsonBtn').click(function(){
 		if(confirm('确定更新？')){
 			ThinkAjax.sendForm('buildForm','__URL__/build/',complete,'result');
 		}
-		
-		
+
+
 		});
-            
-    
+
+
 		$J('a.selectPic,a.delArticle').facebox();
-        
+
 		//翻页ajax
 		$J('a.editArticle,.pagination>a').click(function(){
 		var href = this.href;
 		mainLoad(href)
-		
+
 		return false;
 		})
-		
+
+        //修改状态
+		$J('a.sendArticle').click(function(){
+		var href = this.href;
+		ThinkAjax.send(href,'',completeN,'result');//参数ajax=1
+		return false;
+
+		})
+
 		})
 </script>
 <!--[if IE]><script type="text/javascript" src="resources/scripts/jquery.bgiframe.js"></script><![endif]-->
@@ -75,7 +83,7 @@ $J(document).ready(function(){
              <else/>
               <th>排序</th>
               </if>
-              
+
             <th>更新时间</th>
             <th>操作</th>
           </tr>
@@ -89,7 +97,7 @@ $J(document).ready(function(){
     </form>
              </if>
            </td>
-          
+
             <td colspan="3"><div class="pagination"> {$page}
                 <!--<a href="#" title="第一页">&laquo; First</a><a href="#" title="上一页">&laquo; Previous</a> <a href="#" class="number" title="1">1</a> <a href="#" class="number" title="2">2</a> <a href="#" class="number current" title="3">3</a> <a href="#" class="number" title="4">4</a> <a href="#" title="下一页">Next &raquo;</a><a href="#" title="最后一页">Last &raquo;</a>-->
               </div>
@@ -102,10 +110,17 @@ $J(document).ready(function(){
             <tr>
               <td><a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle">{$mTable.title_article}</a></td>
               <td>{$cntype[$mTable['typeIds_article']]}</td>
-              <td>{$mTable.sort}</td>
+               <td>{$mTable.sort}</td>
               <td>{$mTable.updateTime_article|date='Y-m-d',###}</td>
               <td class="iconTools"><!-- Icons -->
                 <a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle editIcon" title="编辑">编辑</a> <a href="__URL__/delete/id_article/{$mTable.id_article}" class="delArticle delIcon" title="删除">删除</a>
+
+                <if condition="($mTable.bORn_article eq 'y')">
+                <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/n" class="sendArticle" title="点击发布">未发布</a>
+                  <else/>
+                  <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/y" class="sendArticle" title="点击不发布"> 已发布</a>  
+                </if>
+
                 <!--<a href="#" title="Edit Meta"><img src="__PUBLIC__/admin/resources/images/icons/hammer_screwdriver.png" alt="Edit Meta" /></a>	-->              </td>
             </tr>
           </volist>
@@ -121,7 +136,7 @@ $J(document).ready(function(){
           <label>标题</label>
           <input class="text-input medium-input" type="text"  name="title_article" />
           <select name="typeIds_article">
-          
+
             <volist name='otype' id='option' >
             	<eq name="option['pid']" value="$ppid">
               <option value="{$option.id}" >{$option.title}</option>
@@ -133,35 +148,35 @@ $J(document).ready(function(){
          <p>
          <label>摘要</label>
            <textarea class="text-input textarea" name="summary_article" cols="79" rows="5"></textarea>
-           
-       
+
+
           <label>图片</label>
-          
+
           <ul class="shortcut-buttons-set" id="picList">
         	<li><a class="shortcut-button selectPic" href="__APP__/Album/indexOne"><span>
 					<img src="__PUBLIC__/admin/resources/images/icons/image_add_48.png" id="selectImgObj" alt="icon" /><br />
 					选择图片
 				</span></a></li>
-                
-         
+
+
         </ul>
          <div class="clear"></div>
           <input class="text-input small-input" type="text" name="picturePath" id="selectImgHide" />
           <input type="checkbox" value="1" id="selectImgSize"/> 原图
-        
+
           <!-- Classes for input-notification: success, error, information, attention -->
           </p>
-           
-            
-         
+
+
+
            <p>
           <label>首页新闻位置</label>
-          <select name="sort">   
-            <option value="100" >不显示在首页</option>       
+          <select name="sort">
+            <option value="100" >不显示在首页</option>
             <volist name='newsort' id='option' >
-                
+
               <option value="{$option}" >{$option}</option>
-     
+
             </volist>
           </select>
 
@@ -187,12 +202,12 @@ $J(document).ready(function(){
         </p>
         <p>
           <input class="button" type="button" value="Create" id="addArticleBtn" />
-          
+
           <input type="hidden" name="menu_pid" value="{$ppid}" />
           <input type="hidden" name="ajax" value="1" />
           <input type="hidden" name="writer_article" value="{@trueName}" />
           <input type="hidden" name="writerId_article" value="{@authId}" />
-          <input type="hidden" name="bORn_article" value="n" />
+          <input type="hidden" name="bORn_article" value="y" />
         </p>
         </fieldset>
         <div class="clear"></div>
@@ -214,15 +229,15 @@ $J(document).ready(function(){
 
 <script>
     $J('#ansonDatepicker').ansonDatepicker();
- 
+
 $J('#selectImgSize').click(function(){
-    
+
   var sval = $J('#selectImgHide').val();
-                
+
    if(sval.length < 4) return false;
-    
+
     if(this.checked){
-        
+
        $J('#selectImgHide').val(sval.replace('s_',''));
     }else{
         $J('#selectImgHide').val($J('#selectImgObj').attr('src'));

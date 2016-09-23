@@ -45,7 +45,7 @@ class InfoAction extends CommonAction{
 		$count = $Article->where($where)->count();//计算总数
         
         $p = new Page ( $count, 15 );
-		$Mlist=$Article->where($where)->limit($p->firstRow.','.$p->listRows)->order('id_article desc,writerId_article asc')->select();//findAll
+		$Mlist=$Article->where($where)->limit($p->firstRow.','.$p->listRows)->order('updateTime_article desc,sort asc')->select();//findAll
 		$p->setConfig('header','记录');
 
 		$p->setConfig('prev',"&laquo; 上一页");

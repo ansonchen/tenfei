@@ -25,6 +25,7 @@ class InfoitemAction extends CommonAction{
 		$Article	=	D("Article");
             
 		$condition['id_article']	=	$_GET['id'];
+        $condition['bORn_article'] = 'n';
             
 		$vo = $Article->where($condition)->find(); // 查询数据   
 			if($vo) {
