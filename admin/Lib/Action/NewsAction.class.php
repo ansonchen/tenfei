@@ -65,9 +65,20 @@ class NewsAction extends CommonAction {
 		$Article = D('ArticleView');
 
         $pid = $_GET['pid'];
+        $type = $_GET['type'];
+        $key= $_GET['key'];
+        
+        
 		//$pid = 123;
 		//$where['bORn_article'] = 'n';
         $where['menu_pid'] = $pid;
+        
+        if(!empty($type) && $type !='*'){
+            $where['typeIds_article'] = $type;
+        }
+        if(!empty($key)){
+            $where['title_article'] = $key;
+        }
 		if(!$_SESSION['administrator'])
 		{
 $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
@@ -85,6 +96,9 @@ $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
 		$page = $p->show ();
 		$this->assign( "page", $page );
         $this->assign( "ppid", $pid );
+        $this->assign( "key", $key );
+        $this->assign( "selecttype", $type );
+        
 
 		//$Mlist = $Node->order('sort_node asc')->select();
         $this->assign('today',date('Y-m-d',time()));
