@@ -72,6 +72,9 @@ $J(document).ready(function(){
 				DD_belatedPNG.fix('.png_bg, img, li');
 			</script>
 		<![endif]-->
+		<style>
+            .unsend{color: red;font-weight: 800}
+</style>
 </head>
 <body>
 <!-- Main Content Section with everything -->
@@ -169,7 +172,7 @@ $J(document).ready(function(){
                 <a href="__URL__/edit/id_article/{$mTable.id_article}" class="editArticle editIcon" title="编辑">编辑</a> <a href="__URL__/delete/id_article/{$mTable.id_article}" class="delArticle delIcon" title="删除">删除</a>
 
                 <if condition="($mTable.bORn_article eq 'y')">
-                <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/n" class="sendArticle" title="点击发布">未发布</a>
+                <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/n" class="sendArticle unsend" title="点击发布">未发布</a>
                   <else/>
                   <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/y" class="sendArticle" title="点击不发布"> 已发布</a>  
                 </if>
