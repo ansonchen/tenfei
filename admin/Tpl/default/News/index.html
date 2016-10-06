@@ -33,7 +33,7 @@ $J(document).ready(function(){
             var key = $J('#searchkey').val();             
             //console.log(key)
             //if(!key.length) return false;
-            mainLoad('__URL__/?pid={$ppid}&key='+key)
+            mainLoad('__URL__/?pid={$ppid}&key='+encodeURI(key));
         })
         
           $J('#searchkey').keydown(function(e){

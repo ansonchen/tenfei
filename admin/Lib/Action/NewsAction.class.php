@@ -77,7 +77,7 @@ class NewsAction extends CommonAction {
             $where['typeIds_article'] = $type;
         }
         if(!empty($key)){
-            $where['title_article'] = $key;
+            $where['title_article'] = urldecode($key);
         }
 		if(!$_SESSION['administrator'])
 		{
@@ -96,7 +96,7 @@ $where['writerId_article']=  $_SESSION [C ( 'USER_AUTH_KEY' )];
 		$page = $p->show ();
 		$this->assign( "page", $page );
         $this->assign( "ppid", $pid );
-        $this->assign( "key", $key );
+        $this->assign( "key", urldecode($key));
         $this->assign( "selecttype", $type );
         
 
