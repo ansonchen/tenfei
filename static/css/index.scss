@@ -176,7 +176,7 @@ body{ background: #f9f9f9}
         .newsScroll{width: 1380px;height: 331px; position: relative;overflow: hidden;
             .scrollBox{
                 width:2800px;height: 331px; position: absolute;left: 0;top: 0;
-                @include transition(transform 500ms ease-out);
+                @include transition(all 500ms ease-out);
             }
         
         }
@@ -881,4 +881,13 @@ ul.circle {list-style-type:disc}
 
 .fadeIn{
 @include anInit(fadeIn,1s);
+}
+
+.fadeOut2{
+@include anInit(fadeOut,.5s);
+}
+
+
+.fadeIn2{
+@include anInit(fadeIn,.5s);
 }

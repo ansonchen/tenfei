@@ -35,13 +35,19 @@ function news(){
 						for (var n in t) e.addEventListener(t[n], a, !1)
 					}
 			};
-	var st ;
-
+	var st,actobj;   
+    
 	function bindEve(e){
 
-
+        
 		var obj = e.target;
-
+        
+        if(actobj===obj) return false;
+        
+        imgList.className="scrollBox fadeOut";
+        
+        actobj = obj;
+        
 			if(st) clearTimeout(st);
 
 			st = setTimeout(function(){
@@ -60,8 +66,9 @@ function news(){
 				});
 
 			},50)
-
-
+            setTimeout(function(){
+            imgList.className="scrollBox fadeIn";
+            } ,500)
 		
 		//console.log(e.target.tagName)
 	}
