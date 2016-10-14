@@ -21,29 +21,31 @@ $J(document).ready(function(){
 
 
 		$J('a.selectPic,a.delArticle').facebox();
-    
+
         $J('#menuType').change(function(){
-            
+
           mainLoad('__URL__/?pid={$ppid}&type='+this.value)
         })
-        
-       
-        
+
+
+
          $J('#SearchB').click(function(){
-            var key = $J('#searchkey').val();             
+            var key = $J('#searchkey').val();
             //console.log(key)
             //if(!key.length) return false;
-            mainLoad('__URL__/?pid={$ppid}&key='+encodeURI(key));
+            //
+            mainLoad('__URL__/?pid={$ppid}&key='+key);
+
         })
-        
+
           $J('#searchkey').keydown(function(e){
-            
+
             if(e.keyCode===13){
-               
+
                  $J('#SearchB').click();
                 return false;
             }
-            
+
         })
 
 		//翻页ajax
@@ -104,7 +106,7 @@ $J(document).ready(function(){
   <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
   <p>
     <input class="text-input medium-input" placeholder="请输入标题" type="text" id="searchkey" name="key" value="{$key}"/>
-            
+
     <input class="button" type="button" value="搜索" id="SearchB" />
   </p>
   </fieldest>
@@ -117,12 +119,12 @@ $J(document).ready(function(){
             <if condition="$key">
             二级菜单
             <else/>
-            
+
             <select name="typeID" id='menuType'>
             <option value="*" >所有</option>
             <volist name='otype' id='optionMenuType' >
-            	<eq name="optionMenuType['pid']" value="$ppid">            	 
-              <option value="{$optionMenuType.id}" 
+            	<eq name="optionMenuType['pid']" value="$ppid">
+              <option value="{$optionMenuType.id}"
               <eq name="optionMenuType.id" value="$selecttype">selected="selected"</eq>
               >
               {$optionMenuType.title}
@@ -130,7 +132,7 @@ $J(document).ready(function(){
               </eq>
             </volist>
           </select>
-            
+
             </if>
             </th>
             <th>
@@ -174,7 +176,7 @@ $J(document).ready(function(){
                 <if condition="($mTable.bORn_article eq 'y')">
                 <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/n" class="sendArticle unsend" title="点击发布">未发布</a>
                   <else/>
-                  <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/y" class="sendArticle" title="点击不发布"> 已发布</a>  
+                  <a href="__URL__/updateStatus/id/{$mTable.id_article}/status/y" class="sendArticle" title="点击不发布"> 已发布</a>
                 </if>
 
                 <!--<a href="#" title="Edit Meta"><img src="__PUBLIC__/admin/resources/images/icons/hammer_screwdriver.png" alt="Edit Meta" /></a>	-->              </td>
