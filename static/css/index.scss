@@ -891,3 +891,31 @@ ul.circle {list-style-type:disc}
 .fadeIn2{
 @include anInit(fadeIn,.5s);
 }
+@media (max-width:1480px) {
+
+    .head .news .leftArr{
+        left:660px;
+        top:360px;
+        background-image: none;
+        background-color: #000;
+        width:20px;
+        height:20px;
+        border-radius: 100%;
+        &.cur{
+                opacity: 1
+            }
+        
+    }
+    .head .news .rightArr{
+        left:700px;
+        top:360px;
+        background-image: none;
+        background-color: #000;
+        width:20px;
+        height:20px;
+        border-radius: 100%;
+        &.cur{
+                opacity: 1
+            }
+    }
+}

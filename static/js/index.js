@@ -37,6 +37,8 @@ function news(){
 			};
 	var st,actobj;   
     
+    actobj = leftArr;
+    
 	function bindEve(e){
 
         
@@ -44,9 +46,13 @@ function news(){
         
         if(actobj===obj) return false;
         
+        actobj.className = actobj.className.replace(' cur','');
+        
         imgList.className="scrollBox fadeOut";
         
         actobj = obj;
+        
+        actobj.className = actobj.className +' cur';
         
 			if(st) clearTimeout(st);
 
