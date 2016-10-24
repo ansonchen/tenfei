@@ -152,6 +152,9 @@ body{ background: #f9f9f9}
             right: 46px;
             top:130px;
             overflow: hidden;
+                video{
+                    width: 630px;
+                }
                 img{ width: 563px;
                 height: 353px;}
                
@@ -895,7 +898,7 @@ ul.circle {list-style-type:disc}
 
     .head .news .leftArr{
         left:660px;
-        top:360px;
+        top:370px;
         background-image: none;
         background-color: #000;
         width:20px;
@@ -907,8 +910,8 @@ ul.circle {list-style-type:disc}
         
     }
     .head .news .rightArr{
-        left:700px;
-        top:360px;
+        left:710px;
+        top:370px;
         background-image: none;
         background-color: #000;
         width:20px;
