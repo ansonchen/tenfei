@@ -2,48 +2,62 @@
 <head>
 <title>斐波那契数列</title>
 <style>
-*{font-size:20px;line-height:1.6;margin:0;padding:0}
+*{font-size:20px;line-height:1.6;margin:0;padding:0; font-family:"Inconsolata", "Menlo", "Consolas","Arial","Microsoft YaHei","Hiragino Sans GB", "宋体", sans-serif}
 #outPrint{
 margin:20px;
+
 }
-.main{margin:20px}
+.main{width: 320px; margin: 20px auto;}
+.main input{padding: 0 4px;margin: 0;}
+.main button{padding: 0 .5em;}
+.main h2{font-size: 20px;margin: 20px 0 0; opacity: .6}
+.main p{font-size: 20px;}
 </style>
 </head>
 <body>
 <div class="main">
-<input type="text" id="input_price" />
-
-<button id="btn">确定</button>
+<input type="text" id="input_price" placeholder="输入价格" /><button id="btn">确定</button>
 
 <div id="outPrint" ></div>
 </div>
 </body>
 
 <script>
-var price = document.getElementById('input_price');
-var btn = document.getElementById('btn');
-var outPrint = document.getElementById('outPrint');
+!function(){
+    var d = document;
+    var price = document.getElementById('input_price');
+    var btn = document.getElementById('btn');
+    var outPrint = document.getElementById('outPrint');
 
-btn.onclick = function(){
+    btn.onclick = function(){
 
-var html ='<h2>可能上升的价位</h2>';
-html += (Number(price.value) * (1+0.191)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+0.236)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+0.382)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+0.50)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+0.618)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+0.809)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1+1)).toFixed(2) + '</br>';
-html +='<h2>可能下跌的价位</h2>';
-html += (Number(price.value) * (1-0.191)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1-0.236)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1-0.382)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1-0.50)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1-0.618)).toFixed(2) + '</br>';
-html += (Number(price.value) * (1-0.809)).toFixed(2) + '</br>';
+    var html ='<h2>可能上升的价位</h2><p>';
+    html += (Number(price.value) * (1+0.191)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+0.236)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+0.382)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+0.50)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+0.618)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+0.809)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1+1)).toFixed(2) + '</p>';
+    html +='<h2>可能下跌的价位</h2><p>';
+    html += (Number(price.value) * (1-0.191)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1-0.236)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1-0.382)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1-0.50)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1-0.618)).toFixed(2) + '</p><p>';
+    html += (Number(price.value) * (1-0.809)).toFixed(2) + '</p>';
 
-outPrint.innerHTML=html;
-}
+    outPrint.innerHTML=html;
+    }
+
+    price.onkeypress = function(e){
+
+        if(e.keyCode===13){
+            btn.onclick();
+        }
+    }
+}()
+
 
 </script>
 </html>
